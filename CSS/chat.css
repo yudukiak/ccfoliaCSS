@@ -1,0 +1,144 @@
+/* OBS */
+body {
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+/* カットイン */
+.bboqSg,
+/* 背景 */
+.iOmLqx,
+/* 盤面 */
+.jyZRYv,
+/* キャラ */
+.jgDXBK,
+/* 吹き出し */
+.hyACfo,
+/* 入力欄 */
+.fFvlhF,
+.MuiTypography-noWrap,
+/* モーダル削除 */
+[role="presentation"],
+/* ヘッダー削除 */
+header,
+/* 音量 */
+.fcJagU,
+/* 拡大縮小 */
+.hzPuOC,
+/* 鉛筆ボタン */
+.iiSeFJ,
+/* スクロールバー */
+::-webkit-scrollbar {
+  display: none !important;
+}
+
+/**************************
+　アニメーション
+**************************/
+.MuiListItem-gutters {
+  animation-name: fadeleft;
+  animation-duration: 2s;
+}
+
+@keyframes fadeleft {
+  from {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/**************************
+　デザイン
+**************************/
+hr {
+  display: none;
+}
+
+.MuiListItem-gutters {
+  padding: 5px;
+}
+
+.MuiListItem-gutters .MuiListItemAvatar-root {
+  float: left;
+  margin-right: -60px;
+  width: 40px;
+  object-fit: cover;
+}
+
+.MuiListItem-gutters .MuiListItemAvatar-root .bhhAF,
+.MuiListItem-gutters .MuiListItemAvatar-root img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #F6F7F8;
+  object-fit: cover;
+  object-position: top;
+}
+
+.MuiListItemText-root {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 0 55px;
+  padding: 0 10px;
+  min-width: 120px;
+  max-width: 100%;
+  font-size: 16px;
+  background: #302833;
+  border: solid 3px #FFF;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.MuiPaper-root {
+  background-color: transparent;
+}
+
+/* 表示 */
+.MuiTypography-body2 {
+  font-size: 1.5rem;
+}
+
+.qoQGQ>.MuiPaper-root {
+  width: 100%;
+}
+
+.jAnegm>div:nth-child(1)>div>div {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  height: 500px !important;
+}
+
+.jAnegm>div:nth-child(1)>div>div>div {
+  display: none;
+  height: 90px !important;
+  width: 420px !important;
+  position: static !important;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.jAnegm>div:nth-child(1)>div>div>div>div>div {
+  overflow: hidden;
+}
+
+.jAnegm>div:nth-child(1)>div>div>div>div>div>p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
+/* 特定のチャットだけ表示（1からスタート） */
+/*
+.jAnegm>div:nth-child(1)>div>div>div:nth-last-child(3),
+.jAnegm>div:nth-child(1)>div>div>div:nth-last-child(2),
+.jAnegm>div:nth-child(1)>div>div>div:nth-last-child(1) {
+  display: block !important;
+}
+*/

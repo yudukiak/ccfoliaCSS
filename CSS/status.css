@@ -1,0 +1,77 @@
+/* OBS */
+body {
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+/* カットイン */
+.bboqSg,
+/* 背景 */
+.iOmLqx,
+/* 盤面 */
+.jyZRYv,
+/* チャット */
+.qoQGQ>.MuiPaper-root,
+/* 吹き出し */
+.hyACfo,
+/* モーダル削除 */
+[role="presentation"],
+/* ヘッダー削除 */
+header,
+/* 音量 */
+.fcJagU,
+/* 拡大縮小 */
+.hzPuOC,
+/* 鉛筆ボタン */
+.iiSeFJ,
+/* スクロールバー */
+::-webkit-scrollbar {
+  display: none !important;
+}
+
+/**************************
+　ステータス
+**************************/
+/* 上下の調整 */
+.jgDXBK {
+  top: 0;
+  padding: 0;
+}
+
+/* キャラアイコンを削除 */
+.fFXEDN {
+  display: none;
+}
+
+/* 全て非表示にする */
+.dnKCVK {
+  display: none;
+}
+
+/* サイズ調整 */
+.MuiTypography-body2 {
+  font-size: 2rem;
+}
+
+.iYAzYL,
+.jaQVoM {
+  height: 48px;
+}
+
+.jaQVoM {
+  width: 185px;
+}
+
+.MuiTypography-body2 {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+/* 特定のキャラだけ表示（1からスタート） */
+/*
+.dnKCVK:nth-child(1) {
+  display: flex;
+}
+*/
