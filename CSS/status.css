@@ -25,6 +25,8 @@ header,
 .hzPuOC,
 /* 鉛筆ボタン */
 .iiSeFJ,
+/* 監視モード */
+.MuiSnackbar-root,
 /* スクロールバー */
 ::-webkit-scrollbar {
   display: none !important;
