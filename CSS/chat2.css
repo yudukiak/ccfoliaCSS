@@ -1,0 +1,124 @@
+/* OBS */
+body {
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+/* カットイン */
+.bboqSg,
+/* 背景 */
+.iOmLqx,
+/* 盤面 */
+.jyZRYv,
+/* キャラ */
+.jgDXBK,
+/* 吹き出し */
+.hyACfo,
+/* 入力欄 */
+.fFvlhF,
+.MuiTypography-noWrap,
+/* モーダル削除 */
+[role="presentation"],
+/* ヘッダー削除 */
+header,
+/* 音量 */
+.fcJagU,
+/* 拡大縮小 */
+.hzPuOC,
+/* 鉛筆ボタン */
+.iiSeFJ,
+/* スクロールバー */
+::-webkit-scrollbar {
+  display: none !important;
+}
+
+/**************************
+　アニメーション
+**************************/
+.MuiListItem-gutters {
+  animation-name: fadeleft;
+  animation-duration: 2s;
+}
+
+@keyframes fadeleft {
+  from {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/**************************
+　デザイン
+**************************/
+hr {
+  display: none;
+}
+
+.MuiListItem-root {
+  padding: 8px;
+  background: #302833;
+  border: solid 3px #FFF;
+  box-sizing: border-box;
+  border-radius: 10px;
+  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, .8));
+}
+
+.bhhAF {
+  background-color: transparent;
+}
+
+.MuiListItemAvatar-root {
+  margin: 0;
+}
+
+.MuiPaper-root {
+  background-color: transparent;
+}
+
+/* 表示 */
+.MuiTypography-body2 {
+  font-size: 1.5rem;
+}
+
+.qoQGQ>.MuiPaper-root {
+  width: 100%;
+}
+
+.jAnegm>div:nth-child(1)>div>div {
+  display: block;
+  height: 500px !important;
+}
+
+.jAnegm>div:nth-child(1)>div>div>div {
+  display: none;
+  height: auto !important;
+  min-height: auto !important;
+  max-height: 200px !important;
+  width: 420px !important;
+  position: static !important;
+  flex-shrink: 0;
+  margin: 10px 10px 10px;
+}
+
+.jAnegm>div:nth-child(1)>div>div>div>div>div {
+  overflow: hidden;
+}
+
+.jAnegm>div:nth-child(1)>div>div>div>div>div>p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
+/* 特定のチャットだけ表示 */
+/*
+.jAnegm>div:nth-child(1)>div>div>div:nth-last-child(-n+5) {
+  display: block !important;
+}
+*/
