@@ -58,9 +58,6 @@ header,
 /**************************
 　デザイン
 **************************/
-hr {
-  display: none;
-}
 
 .MuiListItem-root {
   padding: 8px;
@@ -71,19 +68,23 @@ hr {
   filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, .8));
 }
 
-.bhhAF {
+.MuiListItem-root .MuiListItemAvatar-root {
+  margin: 0;
+}
+
+.MuiListItem-root .MuiListItemAvatar-root .bhhAF {
   background-color: transparent;
 }
 
-.MuiListItemAvatar-root {
-  margin: 0;
+/* 表示 */
+hr {
+  display: none;
 }
 
 .MuiPaper-root {
   background-color: transparent;
 }
 
-/* 表示 */
 .MuiTypography-body2 {
   font-size: 1.5rem;
 }
@@ -93,7 +94,9 @@ hr {
 }
 
 .jAnegm>div:nth-child(1)>div>div {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
   height: 500px !important;
 }
 
@@ -118,9 +121,9 @@ hr {
   -webkit-line-clamp: 5;
 }
 
-/* 特定のチャットだけ表示 */
+/* 特定のチャットだけ表示（+3の数値を増やすと表示量が増える） */
 /*
-.jAnegm>div:nth-child(1)>div>div>div:nth-last-child(-n+5) {
+.jAnegm>div:nth-child(1)>div>div>div:nth-last-child(-n+3) {
   display: block !important;
 }
 */
