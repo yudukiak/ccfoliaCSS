@@ -1,0 +1,190 @@
+/* OBS */
+body {
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+/* カットイン */
+.bboqSg,
+/* 背景 */
+.iOmLqx,
+/* 盤面 */
+.jyZRYv,
+/* キャラ */
+.jgDXBK,
+/* チャット */
+.qoQGQ>.MuiPaper-root,
+/* モーダル削除 */
+[role="presentation"],
+/* ヘッダー削除 */
+header,
+/* 音量 */
+.fcJagU,
+/* 拡大縮小 */
+.hzPuOC,
+/* 鉛筆ボタン */
+.iiSeFJ,
+/* スクロールバー */
+::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* 盤面のサイズ */
+.fTLLNh {
+  width: 100% !important;
+}
+
+/**************************
+　吹き出し
+**************************/
+/* 全体の横幅 */
+.hyACfo {
+  max-width: 960px;
+}
+
+/* タイトルの方 */
+.MuiTypography-subtitle2,
+.MuiTypography-body2 {
+  font-size: 1.6rem;
+}
+
+.MuiToolbar-gutters {
+  padding: 12px 24px;
+}
+
+/* ログの方 */
+.MuiTypography-body1 {
+  font-size: 2rem;
+}
+
+.jfgTmU {
+  padding: 0px 24px 16px;
+  height: 160px;
+}
+
+/* アイコン */
+.jkZEL {
+  width: 120px;
+  height: 120px;
+  margin-left: 2px;
+  margin-bottom: 5px;
+  background: #302833;
+  border: solid 6px #F6F7F8;
+  object-fit: cover;
+  object-position: top;
+}
+
+[src=""].jkZEL {
+  display: none;
+}
+
+/* ダイス */
+.sc-exiMuG {
+  margin-bottom: 5px;
+}
+
+/* ダイス */
+[src="/images/10_dice/10_dice[1].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/01d10.png);
+}
+
+[src="/images/10_dice/10_dice[2].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/02d10.png);
+}
+
+[src="/images/10_dice/10_dice[3].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/03d10.png);
+}
+
+[src="/images/10_dice/10_dice[4].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/04d10.png);
+}
+
+[src="/images/10_dice/10_dice[5].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/05d10.png);
+}
+
+[src="/images/10_dice/10_dice[6].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/06d10.png);
+}
+
+[src="/images/10_dice/10_dice[7].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/07d10.png);
+}
+
+[src="/images/10_dice/10_dice[8].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/08d10.png);
+}
+
+[src="/images/10_dice/10_dice[9].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/09d10.png);
+}
+
+[src="/images/10_dice/10_dice[10].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/10d10.png);
+}
+
+/* ダイス */
+[src="/images/6_dice/6_dice[1].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/01d6.png);
+}
+
+[src="/images/6_dice/6_dice[2].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/02d6.png);
+}
+
+[src="/images/6_dice/6_dice[3].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/03d6.png);
+}
+
+[src="/images/6_dice/6_dice[4].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/04d6.png);
+}
+
+[src="/images/6_dice/6_dice[5].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/05d6.png);
+}
+
+[src="/images/6_dice/6_dice[6].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/06d6.png);
+}
+
+/* 吹き出し */
+.MuiPaper-root {
+  background-color: transparent;
+  box-shadow: none;
+  color: #F6F7F8;
+}
+
+.MuiToolbar-root {
+  padding: 0 24px;
+}
+
+.sc-hYAvag {
+  margin: 0;
+  position: relative;
+  padding: 0.5em 1.5em;
+  border-top: solid 6px #F6F7F8;
+  border-bottom: solid 6px #F6F7F8;
+  overflow: visible;
+}
+
+.sc-hYAvag:before,
+.sc-hYAvag:after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  width: 6px;
+  height: -webkit-calc(100% + 20px);
+  height: calc(100% + 20px);
+  background-color: #F6F7F8;
+}
+
+.sc-hYAvag:before {
+  left: 10px;
+}
+
+.sc-hYAvag:after {
+  right: 10px;
+}
