@@ -1,0 +1,116 @@
+:root {
+  --background-color: rgb(0, 0, 0);
+  --border-color: rgb(255, 255, 255);
+  --border-width: 2px;
+  --border-radius: 0px;
+  --font-color: rgb(255, 255, 255);
+  --font-color-fail: rgb(245, 0, 87);
+  --font-color-success: rgb(33, 150, 243);
+  --font-size: 1.5rem;
+  --image-radius: 0%;
+  --width: 500px;
+  --line-clamp: 5;
+}
+
+/**************************
+　各種調整
+**************************/
+/* OBS */
+body {
+  background-color: rgb(146, 140, 54, 0.5);
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+/* カットイン */
+.bboqSg,
+/* 背景 */
+.iOmLqx,
+/* 盤面 */
+.jyZRYv,
+/* キャラ */
+.jgDXBK,
+/* 吹き出し */
+.hyACfo,
+/* 入力欄 */
+.MuiTypography-noWrap,
+/* モーダル削除 */
+[role="presentation"],
+/* ヘッダー削除 */
+.MuiToolbar-gutters,
+/* 音量 */
+.fcJagU,
+/* 拡大縮小 */
+.hzPuOC,
+/* 鉛筆ボタン */
+.iiSeFJ,
+/* スクロールバー */
+::-webkit-scrollbar {
+  display: none !important;
+}
+
+/**************************
+　デザイン
+**************************/
+.qoQGQ>.MuiPaper-root {
+  width: 100%;
+}
+
+hr {
+  display: none;
+}
+
+.MuiListItem-root {
+  padding: 8px;
+  background: var(--background-color);
+  border: solid var(--border-width) var(--border-color);
+  border-radius: var(--border-radius);
+  box-sizing: border-box;
+}
+
+.bhhAF {
+  background: transparent;
+  border-radius: var(--image-radius);
+}
+
+.MuiPaper-root {
+  background-color: transparent;
+}
+
+.MuiTypography-body2 {
+  font-size: var(--font-size)
+}
+
+.jAnegm>div:nth-child(1)>div>div {
+  height: 500px !important;
+}
+
+.jAnegm>div:nth-child(1)>div>div>div {
+  display: none;
+  height: auto !important;
+  min-height: auto !important;
+  max-height: 200px !important;
+  width: var(--width) !important;
+  position: static !important;
+  flex-shrink: 0;
+  margin: 10px 10px 10px;
+}
+
+.MuiListItemText-root {
+  overflow: hidden;
+}
+
+p.MuiTypography-root {
+  color: var(--font-color);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--line-clamp);
+}
+
+.MuiTypography-colorPrimary {
+  color: var(--font-color-success);
+}
+
+.MuiTypography-colorSecondary {
+  color: var(--font-color-fail);
+}
