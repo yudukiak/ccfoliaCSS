@@ -60,6 +60,10 @@ hr {
   display: none;
 }
 
+.MuiDrawer-paperAnchorDockedRight {
+  border: none;
+}
+
 .MuiListItem-root {
   padding: 8px;
   background: var(--background-color);
