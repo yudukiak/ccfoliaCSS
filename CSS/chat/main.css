@@ -66,6 +66,11 @@ hr {
   border: solid var(--border-width) var(--border-color);
   border-radius: var(--border-radius);
   box-sizing: border-box;
+  align-items: center;
+}
+
+.MuiListItemAvatar-alignItemsFlexStart {
+  margin: 0px;
 }
 
 .bhhAF {
