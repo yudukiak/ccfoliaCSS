@@ -5,6 +5,7 @@
   --border-image: url();
   --border-width: 2px;
   --border-radius: 0px;
+  --border-shadow: 0;
   --font-color: rgb(255, 255, 255);
   --font-color-shadow: 0;
   --font-color-fail: rgb(245, 0, 87);
@@ -80,6 +81,7 @@ hr {
   background-position: center;
   background-size: cover;
   box-sizing: border-box;
+  box-shadow: var(--border-shadow);
   align-items: center;
 }
 
