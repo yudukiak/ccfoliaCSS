@@ -6,8 +6,11 @@
   --border-width: 2px;
   --border-radius: 0px;
   --font-color: rgb(255, 255, 255);
+  --font-color-shadow: 0;
   --font-color-fail: rgb(245, 0, 87);
+  --font-color-fail-shadow: 0;
   --font-color-success: rgb(33, 150, 243);
+  --font-color-success-shadow: 0;
   --font-size: 1.5rem;
   --font-shadow: 0;
   --image-radius: 0%;
@@ -118,7 +121,7 @@ hr {
 
 p.MuiTypography-root {
   color: var(--font-color);
-  text-shadow: var(--font-shadow);
+  text-shadow: var(--font-color-shadow);
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: var(--line-clamp);
@@ -126,8 +129,10 @@ p.MuiTypography-root {
 
 .MuiTypography-colorPrimary {
   color: var(--font-color-success);
+  text-shadow: var(--font-color-success-shadow);
 }
 
 .MuiTypography-colorSecondary {
   color: var(--font-color-fail);
+  text-shadow: var(--font-color-fail-shadow);
 }
