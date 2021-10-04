@@ -1,13 +1,16 @@
 :root {
   --background-color: rgb(0, 0, 0);
+  --background-image: url();
   --background-padding: 8px 8px 8px 8px;
   --border-color: rgb(255, 255, 255);
+  --border-image: url();
   --border-width: 2px;
   --border-radius: 0px;
   --font-color: rgb(255, 255, 255);
   --font-color-fail: rgb(245, 0, 87);
   --font-color-success: rgb(33, 150, 243);
   --font-size: 1.5rem;
+  --font-shadow
   --image-radius: 0%;
   --width: 500px;
   --line-clamp: 5;
@@ -68,8 +71,13 @@ hr {
 .MuiListItem-root {
   padding: var(--background-padding);
   background: var(--background-color);
+  background-image: var(--background-image);
   border: solid var(--border-width) var(--border-color);
   border-radius: var(--border-radius);
+  border-image: var(--border-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   box-sizing: border-box;
   align-items: center;
 }
@@ -112,6 +120,7 @@ hr {
 
 p.MuiTypography-root {
   color: var(--font-color);
+  text-shadow: var(--font-shadow);
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: var(--line-clamp);
