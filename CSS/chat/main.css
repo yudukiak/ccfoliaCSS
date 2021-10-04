@@ -1,6 +1,5 @@
 :root {
   --background-color: rgb(0, 0, 0);
-  --background-image: url();
   --background-padding: 8px 8px 8px 8px;
   --border-color: rgb(255, 255, 255);
   --border-image: url();
@@ -71,7 +70,6 @@ hr {
 .MuiListItem-root {
   padding: var(--background-padding);
   background: var(--background-color);
-  background-image: var(--background-image);
   border: solid var(--border-width) var(--border-color);
   border-radius: var(--border-radius);
   border-image: var(--border-image);
