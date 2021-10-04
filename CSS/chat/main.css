@@ -10,7 +10,7 @@
   --font-color-fail: rgb(245, 0, 87);
   --font-color-success: rgb(33, 150, 243);
   --font-size: 1.5rem;
-  --font-shadow
+  --font-shadow: 0;
   --image-radius: 0%;
   --width: 500px;
   --line-clamp: 5;
