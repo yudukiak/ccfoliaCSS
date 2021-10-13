@@ -121,9 +121,13 @@ hr {
   overflow: hidden;
 }
 
-p.MuiTypography-root {
+p.MuiTypography-root,
+.MuiTypography-colorTextSecondary {
   color: var(--font-color);
   text-shadow: var(--font-color-shadow);
+}
+
+p.MuiTypography-root {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: var(--line-clamp);
