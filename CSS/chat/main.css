@@ -20,6 +20,13 @@
 }
 
 /**************************
+　表示用CSS
+.sc-cNKqjZ>div:nth-child(1)>div>div>div:nth-last-child(-n+3) {
+    display: block !important;
+}
+**************************/
+
+/**************************
 　各種調整
 **************************/
 /* OBS */
@@ -30,27 +37,33 @@ body {
 }
 
 /* カットイン */
-.bboqSg,
+.sc-tAExr,
 /* 背景 */
-.iOmLqx,
+.sc-ZOtfp,
 /* 盤面 */
-.jyZRYv,
+.sc-bGaVxB,
 /* キャラ */
-.jgDXBK,
+.sc-jKTccl,
 /* 吹き出し */
-.hyACfo,
+.sc-edERGn,
+/* 名前 */
+.sc-caiLqq,
 /* 入力欄 */
-.MuiTypography-noWrap,
+.sc-iUKqMP,
+/*バージョン表記*/
+.jss10,
 /* モーダル削除 */
 [role="presentation"],
 /* ヘッダー削除 */
-.MuiToolbar-gutters,
+header>.MuiToolbar-gutters,
 /* 音量 */
-.fcJagU,
+.sc-kYHfwS,
 /* 拡大縮小 */
-.hzPuOC,
+.sc-cVAmsi,
 /* 鉛筆ボタン */
-.iiSeFJ,
+.sc-dkQkyq,
+/* 監視モード */
+.MuiSnackbar-root,
 /* スクロールバー */
 ::-webkit-scrollbar {
   display: none !important;
@@ -59,7 +72,7 @@ body {
 /**************************
 　デザイン
 **************************/
-.qoQGQ>.MuiPaper-root {
+.sc-khQegj>.MuiPaper-root {
   width: 100%;
 }
 
@@ -89,7 +102,7 @@ hr {
   margin: 0px;
 }
 
-.bhhAF {
+.sc-bBHHxi {
   background: transparent;
   border-radius: var(--image-radius);
 }
@@ -102,11 +115,11 @@ hr {
   font-size: var(--font-size)
 }
 
-.jAnegm>div:nth-child(1)>div>div {
-  height: 500px !important;
+.sc-cNKqjZ>div:nth-child(1)>div>div {
+  height:  50vh !important;
 }
 
-.jAnegm>div:nth-child(1)>div>div>div {
+.sc-cNKqjZ>div:nth-child(1)>div>div>div {
   display: none;
   height: auto !important;
   min-height: auto !important;
@@ -114,7 +127,7 @@ hr {
   width: var(--width) !important;
   position: static !important;
   flex-shrink: 0;
-  margin: 10px 10px 10px;
+  margin: 10px;
 }
 
 .MuiListItemText-root {

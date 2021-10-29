@@ -6,21 +6,21 @@ body {
 }
 
 /* キャラ */
-.jgDXBK,
+.sc-jKTccl,
 /* チャット */
-.qoQGQ>.MuiPaper-root,
+.sc-khQegj>.MuiPaper-root,
 /* 吹き出し */
-.hyACfo,
+.sc-edERGn,
 /* モーダル削除 */
 [role="presentation"],
 /* ヘッダー削除 */
-header,
+header>.MuiToolbar-gutters,
 /* 音量 */
-.fcJagU,
+.sc-kYHfwS,
 /* 拡大縮小 */
-.hzPuOC,
+.sc-cVAmsi,
 /* 鉛筆ボタン */
-.iiSeFJ,
+.sc-dkQkyq,
 /* 監視モード */
 .MuiSnackbar-root,
 /* スクロールバー */
@@ -29,7 +29,7 @@ header,
 }
 
 /* 盤面 */
-.fTLLNh {
+.sc-gSQFLo {
   width: 100% !important;
 }
 

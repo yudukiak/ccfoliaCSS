@@ -1,37 +1,39 @@
 /* OBS */
 body {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(168, 19, 19, .46);
   margin: 0px auto;
   overflow: hidden;
 }
 
 /* カットイン */
-.bboqSg,
+.sc-tAExr,
 /* 背景 */
-.iOmLqx,
+.sc-ZOtfp,
 /* 盤面 */
-.jyZRYv,
+.sc-bGaVxB,
 /* キャラ */
-.jgDXBK,
+.sc-jKTccl,
 /* チャット */
-.qoQGQ>.MuiPaper-root,
+.sc-khQegj>.MuiPaper-root,
 /* モーダル削除 */
 [role="presentation"],
 /* ヘッダー削除 */
-header,
+header>.MuiToolbar-gutters,
 /* 音量 */
-.fcJagU,
+.sc-kYHfwS,
 /* 拡大縮小 */
-.hzPuOC,
+.sc-cVAmsi,
 /* 鉛筆ボタン */
-.iiSeFJ,
+.sc-dkQkyq,
+/* 監視モード */
+.MuiSnackbar-root,
 /* スクロールバー */
 ::-webkit-scrollbar {
   display: none !important;
 }
 
 /* 盤面のサイズ */
-.fTLLNh {
+.sc-gSQFLo {
   width: 100% !important;
 }
 
@@ -39,7 +41,7 @@ header,
 　吹き出し
 **************************/
 /* 全体の横幅 */
-.hyACfo {
+.MuiPaper-root {
   max-width: 960px;
 }
 
@@ -58,13 +60,13 @@ header,
   font-size: 2rem;
 }
 
-.jfgTmU {
+.MuiToolbar-root+div {
   padding: 0px 24px 16px;
   height: 160px;
 }
 
 /* アイコン */
-.jkZEL {
+.MuiPaper-root>img {
   width: 120px;
   height: 120px;
   margin-left: 2px;
@@ -75,13 +77,13 @@ header,
   object-position: top;
 }
 
-[src=""].jkZEL {
+.MuiPaper-root>img {
   display: none;
 }
 
 /* ダイス */
-.sc-exiMuG {
-  margin-bottom: 5px;
+.sc-ewSTlh {
+  margin-bottom: 15px;
 }
 
 /* ダイス */
@@ -161,7 +163,7 @@ header,
   padding: 0 24px;
 }
 
-.sc-hYAvag {
+.MuiPaper-root>.MuiPaper-root {
   margin: 0;
   position: relative;
   padding: 0.5em 1.5em;
@@ -170,8 +172,8 @@ header,
   overflow: visible;
 }
 
-.sc-hYAvag:before,
-.sc-hYAvag:after {
+.MuiPaper-root>.MuiPaper-root:before,
+.MuiPaper-root>.MuiPaper-root:after {
   content: '';
   position: absolute;
   top: -10px;
@@ -181,10 +183,10 @@ header,
   background-color: #F6F7F8;
 }
 
-.sc-hYAvag:before {
+.MuiPaper-root>.MuiPaper-root:before {
   left: 10px;
 }
 
-.sc-hYAvag:after {
+.MuiPaper-root>.MuiPaper-root:after {
   right: 10px;
 }

@@ -6,25 +6,25 @@ body {
 }
 
 /* カットイン */
-.bboqSg,
+.sc-tAExr,
 /* 背景 */
-.iOmLqx,
+.sc-ZOtfp,
 /* 盤面 */
-.jyZRYv,
+.sc-bGaVxB,
 /* キャラ */
-.jgDXBK,
+.sc-jKTccl,
 /* チャット */
-.qoQGQ>.MuiPaper-root,
+.sc-khQegj>.MuiPaper-root,
 /* モーダル削除 */
 [role="presentation"],
 /* ヘッダー削除 */
-header,
+header>.MuiToolbar-gutters,
 /* 音量 */
-.fcJagU,
+.sc-kYHfwS,
 /* 拡大縮小 */
-.hzPuOC,
+.sc-cVAmsi,
 /* 鉛筆ボタン */
-.iiSeFJ,
+.sc-dkQkyq,
 /* 監視モード */
 .MuiSnackbar-root,
 /* スクロールバー */
@@ -33,7 +33,7 @@ header,
 }
 
 /* 盤面のサイズ */
-.fTLLNh {
+.sc-gSQFLo {
   width: 100% !important;
 }
 
@@ -41,7 +41,7 @@ header,
 　吹き出し
 **************************/
 /* 全体の横幅 */
-.hyACfo {
+.MuiPaper-root {
   max-width: 960px;
 }
 
@@ -60,13 +60,13 @@ header,
   font-size: 2rem;
 }
 
-.jfgTmU {
+.MuiToolbar-root+div {
   padding: 0px 24px 16px;
   height: 160px;
 }
 
 /* アイコン */
-.jkZEL {
+.MuiPaper-root>img {
   width: 120px;
   height: 120px;
   margin-bottom: 5px;
@@ -77,6 +77,6 @@ header,
   object-position: top;
 }
 
-[src=""].jkZEL {
+.MuiPaper-root>img[src=""] {
   display: none;
 }
