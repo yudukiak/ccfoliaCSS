@@ -160,6 +160,6 @@ p.MuiTypography-root {
 }
 .MuiListItemText-primary,
 .MuiTypography-caption {
-  color: var(--font-color)!important;
+  color: var(--font-color);
   text-shadow: var(--font-color-shadow);
 }
