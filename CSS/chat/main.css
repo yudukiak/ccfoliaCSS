@@ -156,5 +156,10 @@ p.MuiTypography-root {
 }
 
 .MuiListItemText-primary {
-  display: none
+  display: none;
+}
+.MuiListItemText-primary,
+.MuiTypography-caption {
+  color: var(--font-color)!important;
+  text-shadow: var(--font-color-shadow);
 }
