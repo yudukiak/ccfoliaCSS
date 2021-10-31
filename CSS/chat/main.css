@@ -155,3 +155,7 @@ p.MuiTypography-root {
   color: var(--font-color-fail);
   text-shadow: var(--font-color-fail-shadow);
 }
+
+.MuiListItemText-primary {
+    display:none
+}
