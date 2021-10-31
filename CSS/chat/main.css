@@ -25,7 +25,6 @@
     display: block !important;
 }
 **************************/
-
 /**************************
 　各種調整
 **************************/
@@ -116,7 +115,7 @@ hr {
 }
 
 .sc-cNKqjZ>div:nth-child(1)>div>div {
-  height:  50vh !important;
+  height: 50vh !important;
 }
 
 .sc-cNKqjZ>div:nth-child(1)>div>div>div {
@@ -157,5 +156,5 @@ p.MuiTypography-root {
 }
 
 .MuiListItemText-primary {
-    display:none
+  display: none
 }
