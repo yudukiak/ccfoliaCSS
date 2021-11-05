@@ -122,7 +122,6 @@ hr {
   display: none;
   height: auto !important;
   min-height: auto !important;
-  max-height: 200px !important;
   width: var(--width) !important;
   position: static !important;
   flex-shrink: 0;
