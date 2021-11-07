@@ -129,43 +129,53 @@ header>.MuiToolbar-gutters,
 }
 
 /* ダイス 10面 */
-[src="/images/10_dice/10_dice[1].png"] {
+[src="/images/10_dice/10_dice[1].png"],
+[src="/images/100_dice/100_dice[1].png"] {
   content: url(https://yudukiak.github.io/ccfoliaCSS/image/10d1.png);
 }
 
-[src="/images/10_dice/10_dice[2].png"] {
+[src="/images/10_dice/10_dice[2].png"],
+[src="/images/100_dice/100_dice[2].png"] {
   content: url(https://yudukiak.github.io/ccfoliaCSS/image/10d2.png);
 }
 
-[src="/images/10_dice/10_dice[3].png"] {
+[src="/images/10_dice/10_dice[3].png"],
+[src="/images/100_dice/100_dice[3].png"] {
   content: url(https://yudukiak.github.io/ccfoliaCSS/image/10d3.png);
 }
 
-[src="/images/10_dice/10_dice[4].png"] {
+[src="/images/10_dice/10_dice[4].png"],
+[src="/images/100_dice/100_dice[4].png"] {
   content: url(https://yudukiak.github.io/ccfoliaCSS/image/10d4.png);
 }
 
-[src="/images/10_dice/10_dice[5].png"] {
+[src="/images/10_dice/10_dice[5].png"],
+[src="/images/100_dice/100_dice[5].png"] {
   content: url(https://yudukiak.github.io/ccfoliaCSS/image/10d5.png);
 }
 
-[src="/images/10_dice/10_dice[6].png"] {
+[src="/images/10_dice/10_dice[6].png"],
+[src="/images/100_dice/100_dice[6].png"] {
   content: url(https://yudukiak.github.io/ccfoliaCSS/image/10d6.png);
 }
 
-[src="/images/10_dice/10_dice[7].png"] {
+[src="/images/10_dice/10_dice[7].png"],
+[src="/images/100_dice/100_dice[7].png"] {
   content: url(https://yudukiak.github.io/ccfoliaCSS/image/10d7.png);
 }
 
-[src="/images/10_dice/10_dice[8].png"] {
+[src="/images/10_dice/10_dice[8].png"],
+[src="/images/100_dice/100_dice[8].png"] {
   content: url(https://yudukiak.github.io/ccfoliaCSS/image/10d8.png);
 }
 
-[src="/images/10_dice/10_dice[9].png"] {
+[src="/images/10_dice/10_dice[9].png"],
+[src="/images/100_dice/100_dice[9].png"] {
   content: url(https://yudukiak.github.io/ccfoliaCSS/image/10d9.png);
 }
 
-[src="/images/10_dice/10_dice[10].png"] {
+[src="/images/10_dice/10_dice[10].png"],
+[src="/images/100_dice/100_dice[10].png"] {
   content: url(https://yudukiak.github.io/ccfoliaCSS/image/10d0.png);
 }
 
