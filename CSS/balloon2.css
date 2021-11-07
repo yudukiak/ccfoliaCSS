@@ -86,7 +86,49 @@ header>.MuiToolbar-gutters,
   margin-bottom: 15px;
 }
 
-/* ダイス */
+/* ダイス 4面 */
+[src="/images/4_dice/4_dice[1].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/4d1.png);
+}
+
+[src="/images/4_dice/4_dice[2].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/4d2.png);
+}
+
+[src="/images/4_dice/4_dice[3].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/4d3.png);
+}
+
+[src="/images/4_dice/4_dice[4].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/4d4.png);
+}
+
+/* ダイス 6面 */
+[src="/images/6_dice/6_dice[1].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/6d1.png);
+}
+
+[src="/images/6_dice/6_dice[2].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/6d2.png);
+}
+
+[src="/images/6_dice/6_dice[3].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/6d3.png);
+}
+
+[src="/images/6_dice/6_dice[4].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/6d4.png);
+}
+
+[src="/images/6_dice/6_dice[5].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/6d5.png);
+}
+
+[src="/images/6_dice/6_dice[6].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/6d6.png);
+}
+
+/* ダイス 10面 */
 [src="/images/10_dice/10_dice[1].png"] {
   content: url(https://yudukiak.github.io/ccfoliaCSS/image/10d1.png);
 }
@@ -127,29 +169,85 @@ header>.MuiToolbar-gutters,
   content: url(https://yudukiak.github.io/ccfoliaCSS/image/10d0.png);
 }
 
-/* ダイス */
-[src="/images/6_dice/6_dice[1].png"] {
-  content: url(https://yudukiak.github.io/ccfoliaCSS/image/1d1.png);
+/* ダイス 20面 */
+[src="/images/20_dice/20_dice[1].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/20d1.png);
 }
 
-[src="/images/6_dice/6_dice[2].png"] {
-  content: url(https://yudukiak.github.io/ccfoliaCSS/image/1d2.png);
+[src="/images/20_dice/20_dice[2].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/20d2.png);
 }
 
-[src="/images/6_dice/6_dice[3].png"] {
-  content: url(https://yudukiak.github.io/ccfoliaCSS/image/1d3.png);
+[src="/images/20_dice/20_dice[3].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/20d3.png);
 }
 
-[src="/images/6_dice/6_dice[4].png"] {
-  content: url(https://yudukiak.github.io/ccfoliaCSS/image/1d4.png);
+[src="/images/20_dice/20_dice[4].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/20d4.png);
 }
 
-[src="/images/6_dice/6_dice[5].png"] {
-  content: url(https://yudukiak.github.io/ccfoliaCSS/image/1d5.png);
+[src="/images/20_dice/20_dice[5].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/20d5.png);
 }
 
-[src="/images/6_dice/6_dice[6].png"] {
-  content: url(https://yudukiak.github.io/ccfoliaCSS/image/1d6.png);
+[src="/images/20_dice/20_dice[6].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/20d6.png);
+}
+
+[src="/images/20_dice/20_dice[7].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/20d7.png);
+}
+
+[src="/images/20_dice/20_dice[8].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/20d8.png);
+}
+
+[src="/images/20_dice/20_dice[9].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/20d9.png);
+}
+
+[src="/images/20_dice/20_dice[10].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/20d10.png);
+}
+
+[src="/images/20_dice/20_dice[11].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/20d11.png);
+}
+
+[src="/images/20_dice/20_dice[12].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/20d12.png);
+}
+
+[src="/images/20_dice/20_dice[13].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/20d13.png);
+}
+
+[src="/images/20_dice/20_dice[14].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/20d14.png);
+}
+
+[src="/images/20_dice/20_dice[15].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/20d15.png);
+}
+
+[src="/images/20_dice/20_dice[16].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/20d16.png);
+}
+
+[src="/images/20_dice/20_dice[17].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/20d17.png);
+}
+
+[src="/images/20_dice/20_dice[18].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/20d18.png);
+}
+
+[src="/images/20_dice/20_dice[19].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/20d19.png);
+}
+
+[src="/images/20_dice/20_dice[20].png"] {
+  content: url(https://yudukiak.github.io/ccfoliaCSS/image/20d20.png);
 }
 
 /* 吹き出し */
