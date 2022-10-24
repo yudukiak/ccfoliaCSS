@@ -8,13 +8,13 @@ body {
 /* カットイン */
 .sc-tAExr,
 /* 背景 */
-.sc-ZOtfp,
+.sc-TRNrF,
 /* 盤面 */
-.sc-bGaVxB,
+.sc-djvmMF,
 /* チャット */
 .MuiDrawer-root,
 /* 吹き出し */
-.sc-edERGn,
+.sc-djUGQo,
 /* モーダル削除 */
 [role="presentation"],
 /* ヘッダー削除 */
@@ -36,7 +36,7 @@ header>.MuiToolbar-gutters,
 　ステータス
 **************************/
 /* 上下の調整 */
-.sc-jKTccl {
+.sc-cwpsFg {
   top: 0;
   padding: 0;
 }
@@ -47,7 +47,7 @@ header>.MuiToolbar-gutters,
 }
 
 /* 全て非表示にする */
-.sc-fIosxK {
+.sc-hsOonA {
   display: none;
 }
 
@@ -56,13 +56,13 @@ header>.MuiToolbar-gutters,
   font-size: 2rem;
 }
 
-.sc-fIosxK>div>div>div,
-.sc-fIosxK>div>div>div>div:nth-child(2)>div {
+.sc-hsOonA>div>div>div,
+.sc-hsOonA>div>div>div>div:nth-child(2)>div {
   height: 48px;
 }
 
-.sc-fIosxK>div>div>div {
-  width: 185px;
+.sc-hsOonA>div>div>div {
+  width: 200px;
 }
 
 .MuiTypography-body2 {
@@ -73,13 +73,13 @@ header>.MuiToolbar-gutters,
 
 /* 特定のキャラだけ表示（1からスタート） */
 /*
-.sc-fIosxK:nth-child(1) {
+.sc-hsOonA:nth-child(1) {
   display: flex;
 }
 */
 /* 横並び（200の倍数） */
 /*
-.sc-iFMAIt {
-  max-width: 400px;
+.sc-fHsOPI {
+  max-width: 600px;
 }
 */
