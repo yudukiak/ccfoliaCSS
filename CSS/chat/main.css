@@ -21,7 +21,7 @@
 
 /**************************
 　表示用CSS
-.sc-cNKqjZ>div:nth-child(1)>div>div>div:nth-last-child(-n+3) {
+.MuiList-root>div:nth-child(1)>div>div>div:nth-last-child(-n+3) {
     display: block !important;
 }
 **************************/
@@ -38,19 +38,15 @@ body {
 /* カットイン */
 .sc-tAExr,
 /* 背景 */
-.sc-ZOtfp,
+.sc-TRNrF,
 /* 盤面 */
-.sc-bGaVxB,
+.sc-djvmMF,
 /* キャラ */
-.sc-jKTccl,
+.sc-cwpsFg,
 /* 吹き出し */
-.sc-edERGn,
-/* 名前 */
-.sc-caiLqq,
+.sc-djUGQo,
 /* 入力欄 */
-.sc-iUKqMP,
-/*バージョン表記*/
-.jss10,
+.sc-iTONeN,
 /* モーダル削除 */
 [role="presentation"],
 /* ヘッダー削除 */
@@ -60,7 +56,7 @@ header>.MuiToolbar-gutters,
 /* 拡大縮小 */
 .sc-hZgfyJ,
 /* 鉛筆ボタン */
-.sc-.sc-dSuTWQ,
+.sc-dSuTWQ,
 /* 監視モード */
 .MuiSnackbar-root,
 /* スクロールバー */
@@ -71,7 +67,7 @@ header>.MuiToolbar-gutters,
 /**************************
 　デザイン
 **************************/
-.sc-khQegj>.MuiPaper-root {
+.MuiDrawer-root {
   width: 100%;
 }
 
@@ -101,9 +97,13 @@ hr {
   margin: 0px;
 }
 
-.sc-bBHHxi {
+.MuiListItemAvatar-root>div {
   background: transparent;
   border-radius: var(--image-radius);
+}
+
+.MuiDrawer-root>.MuiPaper-root {
+  width: 100%;
 }
 
 .MuiPaper-root {
@@ -114,18 +114,9 @@ hr {
   font-size: var(--font-size)
 }
 
-.sc-cNKqjZ>div:nth-child(1)>div>div {
-  height: 50vh !important;
-}
-
-.sc-cNKqjZ>div:nth-child(1)>div>div>div {
+.MuiList-root>div:nth-child(1)>div>div>div {
   display: none;
-  height: auto !important;
-  min-height: auto !important;
   width: var(--width) !important;
-  position: static !important;
-  flex-shrink: 0;
-  margin: 10px;
 }
 
 .MuiListItemText-root {
