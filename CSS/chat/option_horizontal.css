@@ -1,5 +1,9 @@
-.sc-cNKqjZ>div:nth-child(1)>div>div {
+.MuiList-root>div:nth-child(1)>div>div {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
+}
+
+.MuiList-root>div:nth-child(1)>div>div>div {
+   position: sticky!important;
 }
