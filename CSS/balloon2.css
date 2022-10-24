@@ -14,17 +14,17 @@ body {
 /* キャラ */
 .sc-jKTccl,
 /* チャット */
-.sc-khQegj>.MuiPaper-root,
+.MuiDrawer-root,
 /* モーダル削除 */
 [role="presentation"],
 /* ヘッダー削除 */
 header>.MuiToolbar-gutters,
 /* 音量 */
-.sc-kYHfwS,
+.sc-ikjQzJ,
 /* 拡大縮小 */
-.sc-cVAmsi,
+.sc-hZgfyJ,
 /* 鉛筆ボタン */
-.sc-dkQkyq,
+.sc-dSuTWQ,
 /* 監視モード */
 .MuiSnackbar-root,
 /* スクロールバー */
@@ -33,7 +33,7 @@ header>.MuiToolbar-gutters,
 }
 
 /* 盤面のサイズ */
-.sc-gSQFLo {
+.sc-kgUAyh {
   width: 100% !important;
 }
 
