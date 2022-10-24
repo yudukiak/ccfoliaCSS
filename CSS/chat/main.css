@@ -1,6 +1,6 @@
 :root {
   --background-color: rgb(0, 0, 0);
-  --background-padding: 8px 8px 8px 8px;
+  --background-padding: 0;
   --border-color: rgb(255, 255, 255);
   --border-image: url();
   --border-width: 2px;
