@@ -108,6 +108,14 @@ hr {
   width: 100%;
 }
 
+.MuiList-root {
+  width: var(--width) !important;
+}
+
+.MuiList-root>div:nth-child(1)>div>div>div {
+  display: none;
+}
+
 .MuiPaper-root {
   background-color: transparent;
 }
@@ -115,14 +123,9 @@ hr {
 .MuiTypography-body2 {
   font-size: var(--font-size)
 }
-
-.MuiList-root>div:nth-child(1)>div>div>div {
-  display: none;
-  width: var(--width) !important;
-}
-
 .MuiListItemText-root {
   overflow: hidden;
+  height: 100%;
 }
 
 p.MuiTypography-root,
