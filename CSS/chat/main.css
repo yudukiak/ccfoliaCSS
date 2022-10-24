@@ -36,7 +36,7 @@ body {
 }
 
 /* カットイン */
-.sc-tAExr,
+.sc-gJwTLC,
 /* 背景 */
 .sc-TRNrF,
 /* 盤面 */
@@ -59,6 +59,8 @@ header>.MuiToolbar-gutters,
 .sc-dSuTWQ,
 /* 監視モード */
 .MuiSnackbar-root,
+/* タイマー */
+.sc-hAsxaJ,
 /* スクロールバー */
 ::-webkit-scrollbar {
   display: none !important;
