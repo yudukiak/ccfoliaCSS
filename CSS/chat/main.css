@@ -46,7 +46,7 @@ body {
 /* 吹き出し */
 .sc-djUGQo,
 /* 入力欄 */
-.sc-iTONeN,
+form > div,
 /* モーダル削除 */
 [role="presentation"],
 /* ヘッダー削除 */
