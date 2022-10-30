@@ -1,6 +1,6 @@
 :root {
   --background-color: rgb(0, 0, 0);
-  --background-padding: 0;
+  --background-padding: 8px 8px 8px 8px;
   --border-color: rgb(255, 255, 255);
   --border-image: url();
   --border-width: 2px;
@@ -69,7 +69,7 @@ header>.MuiToolbar-gutters,
 /**************************
 　デザイン
 **************************/
-.MuiDrawer-root {
+.MuiDrawer-root>.MuiPaper-root {
   width: 100%;
 }
 
@@ -104,18 +104,6 @@ hr {
   border-radius: var(--image-radius);
 }
 
-.MuiDrawer-root>.MuiPaper-root {
-  width: 100%;
-}
-
-.MuiList-root {
-  width: var(--width) !important;
-}
-
-.MuiList-root>div:nth-child(1)>div>div>div {
-  display: none;
-}
-
 .MuiPaper-root {
   background-color: transparent;
 }
@@ -123,9 +111,23 @@ hr {
 .MuiTypography-body2 {
   font-size: var(--font-size)
 }
+
+.MuiList-root>div:nth-child(1)>div>div {
+  height: 50vh !important;
+}
+
+.MuiList-root>div:nth-child(1)>div>div>div {
+  display: none;
+  height: auto !important;
+  min-height: auto !important;
+  width: var(--width) !important;
+  position: static !important;
+  flex-shrink: 0;
+  margin: 10px;
+}
+
 .MuiListItemText-root {
   overflow: hidden;
-  height: 100%;
 }
 
 p.MuiTypography-root,

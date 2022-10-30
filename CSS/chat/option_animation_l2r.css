@@ -1,6 +1,5 @@
 .MuiList-root>div:nth-child(1)>div>div>div {
-  right: 0px;
-  left: auto!important;
+  margin: 10px 10px 10px auto;
 }
 
 .MuiListItem-gutters {
