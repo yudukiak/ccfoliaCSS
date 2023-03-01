@@ -36,15 +36,15 @@ body {
 }
 
 /* カットイン */
-.sc-gJwTLC,
+.sc-hZgfyJ,
 /* 背景 */
-.sc-TRNrF,
+.sc-fctJkW,
 /* 盤面 */
-.sc-djvmMF,
+.sc-hKdnnL,
 /* キャラ */
-.sc-cwpsFg,
+.sc-jmnVvD,
 /* 吹き出し */
-.sc-djUGQo,
+.MuiPaper-elevation1.MuiPaper-rounded,
 /* 入力欄 */
 form > div,
 /* モーダル削除 */
@@ -52,15 +52,15 @@ form > div,
 /* ヘッダー削除 */
 header>.MuiToolbar-gutters,
 /* 音量 */
-.sc-ikjQzJ,
+.sc-caXVBt,
 /* 拡大縮小 */
-.sc-hZgfyJ,
+.sc-itUGML,
 /* 鉛筆ボタン */
-.sc-dSuTWQ,
+.MuiFab-root,
 /* 監視モード */
 .MuiSnackbar-root,
 /* タイマー */
-.sc-hAsxaJ,
+.MuiPaper-elevation5,
 /* スクロールバー */
 ::-webkit-scrollbar {
   display: none !important;
