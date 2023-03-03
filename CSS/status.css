@@ -34,7 +34,7 @@ div[tabindex="0"]>div:nth-child(3),
 /* 拡大縮小 */
 .MuiButtonBase-root+div,
 /* 鉛筆ボタン */
-.MuiButtonBase-root,
+.MuiButtonBase-root.MuiFab-root,
 /* 監視モード */
 .MuiSnackbar-root,
 /* タイマー */

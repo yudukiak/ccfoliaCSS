@@ -15,7 +15,7 @@ div[open],
 /* 盤面 */
 div[tabindex="0"]>div:nth-child(1),
 /* キャラ */
-.MuiButtonBase-root+div+div,
+.MuiButtonBase-root+div+div:not(.MuiTabs-scroller),
 .MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded+div,
 /* 吹き出し */
 .MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded,
@@ -37,7 +37,7 @@ div[tabindex="0"]>div:nth-child(3),
 /* 拡大縮小 */
 .MuiButtonBase-root+div,
 /* 鉛筆ボタン */
-.MuiButtonBase-root,
+.MuiButtonBase-root.MuiFab-root,
 /* 監視モード */
 .MuiSnackbar-root,
 /* タイマー */
