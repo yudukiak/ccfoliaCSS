@@ -5,20 +5,30 @@ body {
   overflow: hidden;
 }
 
+/**************************
+　個別
+**************************/
 /* キャラ */
-.sc-jmnVvD,
+.MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded+div,
 /* チャット */
-.MuiDrawer-root,
+.MuiDrawer-root.MuiDrawer-docked,
 /* 吹き出し */
-.MuiPaper-elevation1,
+.MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded {
+  display: none !important;
+}
+
+/**************************
+　共通
+**************************/
 /* モーダル削除 */
 [role="presentation"],
 /* ヘッダー削除 */
+/* headerのみだとチャットのタブも消える */
 header>.MuiToolbar-gutters,
 /* 音量 */
-.sc-caXVBt,
+div[tabindex="0"]>div:nth-child(3),
 /* 拡大縮小 */
-.sc-itUGML,
+.MuiButtonBase-root+div,
 /* 鉛筆ボタン */
 .MuiButtonBase-root,
 /* 監視モード */
@@ -28,6 +38,9 @@ header>.MuiToolbar-gutters,
   display: none !important;
 }
 
+/**************************
+　盤面
+**************************/
 /* 盤面 */
 div[tabindex="0"] {
   width: 100% !important;

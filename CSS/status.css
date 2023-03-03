@@ -5,24 +5,34 @@ body {
   overflow: hidden;
 }
 
+/**************************
+　個別
+**************************/
 /* カットイン */
-.sc-hZgfyJ,
+div[open],
 /* 背景 */
-.sc-fctJkW,
+.MuiPaper-root.MuiAppBar-root.MuiAppBar-positionFixed.MuiAppBar-colorDefault.MuiPaper-elevation0+div,
 /* 盤面 */
-.sc-hKdnnL,
+div[tabindex="0"]>div:nth-child(1),
 /* チャット */
-.MuiDrawer-root,
+.MuiDrawer-root.MuiDrawer-docked,
 /* 吹き出し */
-.MuiPaper-elevation1,
+.MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded {
+  display: none !important;
+}
+
+/**************************
+　共通
+**************************/
 /* モーダル削除 */
 [role="presentation"],
 /* ヘッダー削除 */
+/* headerのみだとチャットのタブも消える */
 header>.MuiToolbar-gutters,
 /* 音量 */
-.sc-caXVBt,
+div[tabindex="0"]>div:nth-child(3),
 /* 拡大縮小 */
-.sc-itUGML,
+.MuiButtonBase-root+div,
 /* 鉛筆ボタン */
 .MuiButtonBase-root,
 /* 監視モード */
@@ -35,10 +45,24 @@ header>.MuiToolbar-gutters,
 }
 
 /**************************
+　特定のキャラだけ表示（1からスタート）
+.MuiPaper-rounded+div>div:nth-child(1) {
+  display: flex;
+}
+**************************/
+
+/**************************
+　横並び（200の倍数）
+.MuiPaper-rounded+div>div>div>div {
+  max-width: 600px;
+}
+**************************/
+
+/**************************
 　ステータス
 **************************/
 /* 上下の調整 */
-.sc-jmnVvD {
+.MuiPaper-rounded+div {
   top: 0;
   padding: 0;
 }
@@ -49,7 +73,7 @@ header>.MuiToolbar-gutters,
 }
 
 /* 全て非表示にする */
-.sc-jmnVvD > div {
+.MuiPaper-rounded+div>div {
   display: none;
 }
 
@@ -58,13 +82,14 @@ header>.MuiToolbar-gutters,
   font-size: 2rem;
 }
 
-.sc-jmnVvD>div>div>div>div,
-.sc-jmnVvD>div>div>div>div>div:nth-child(2)>div {
+.MuiPaper-rounded+div>div>div>div>div,
+.MuiPaper-rounded+div>div>div>div>div>div:nth-child(2)>div {
   height: 48px;
 }
 
-.sc-jmnVvD>div>div>div>div {
-  width: 200px;
+/* margin分短くする */
+.MuiPaper-rounded+div>div>div>div>div {
+  width: 196px;
 }
 
 .MuiTypography-body2 {
@@ -72,16 +97,3 @@ header>.MuiToolbar-gutters,
   align-items: center;
   padding: 10px;
 }
-
-/* 特定のキャラだけ表示（1からスタート） */
-/*
-.sc-jmnVvD>div:nth-child(1) {
-  display: flex;
-}
-*/
-/* 横並び（200の倍数） */
-/*
-.sc-jmnVvD>div>div>div {
-  max-width: 600px;
-}
-*/

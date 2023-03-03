@@ -1,3 +1,61 @@
+/* OBS */
+body {
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+/**************************
+　個別
+**************************/
+/* カットイン */
+div[open],
+/* 背景 */
+.MuiPaper-root.MuiAppBar-root.MuiAppBar-positionFixed.MuiAppBar-colorDefault.MuiPaper-elevation0+div,
+/* 盤面 */
+div[tabindex="0"]>div:nth-child(1),
+/* キャラ */
+.MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded+div,
+/* 吹き出し */
+.MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded,
+/* 入力欄 */
+form > div {
+  display: none !important;
+}
+
+/**************************
+　共通
+**************************/
+/* モーダル削除 */
+[role="presentation"],
+/* ヘッダー削除 */
+/* headerのみだとチャットのタブも消える */
+header>.MuiToolbar-gutters,
+/* 音量 */
+div[tabindex="0"]>div:nth-child(3),
+/* 拡大縮小 */
+.MuiButtonBase-root+div,
+/* 鉛筆ボタン */
+.MuiButtonBase-root,
+/* 監視モード */
+.MuiSnackbar-root,
+/* タイマー */
+.MuiPaper-elevation5,
+/* スクロールバー */
+::-webkit-scrollbar {
+  display: none !important;
+}
+
+/**************************
+　表示用CSS（-n+3だと3個ログが表示される）
+.MuiList-root>div:nth-child(1)>div>div>div:nth-last-child(-n+3) {
+    display: block !important;
+}
+**************************/
+
+/**************************
+　チャット
+**************************/
 :root {
   --background-color: rgb(0, 0, 0);
   --background-padding: 8px 8px 8px 8px;
@@ -19,56 +77,6 @@
   --line-clamp: 30;
 }
 
-/**************************
-　表示用CSS
-.MuiList-root>div:nth-child(1)>div>div>div:nth-last-child(-n+3) {
-    display: block !important;
-}
-**************************/
-/**************************
-　各種調整
-**************************/
-/* OBS */
-body {
-  background-color: rgba(0, 0, 0, 0);
-  margin: 0px auto;
-  overflow: hidden;
-}
-
-/* カットイン */
-.sc-hZgfyJ,
-/* 背景 */
-.sc-fctJkW,
-/* 盤面 */
-.sc-hKdnnL,
-/* キャラ */
-.sc-jmnVvD,
-/* 吹き出し */
-.MuiPaper-elevation1.MuiPaper-rounded,
-/* 入力欄 */
-form > div,
-/* モーダル削除 */
-[role="presentation"],
-/* ヘッダー削除 */
-header>.MuiToolbar-gutters,
-/* 音量 */
-.sc-caXVBt,
-/* 拡大縮小 */
-.sc-itUGML,
-/* 鉛筆ボタン */
-.MuiFab-root,
-/* 監視モード */
-.MuiSnackbar-root,
-/* タイマー */
-.MuiPaper-elevation5,
-/* スクロールバー */
-::-webkit-scrollbar {
-  display: none !important;
-}
-
-/**************************
-　デザイン
-**************************/
 .MuiDrawer-root>.MuiPaper-root {
   width: 100%;
 }
