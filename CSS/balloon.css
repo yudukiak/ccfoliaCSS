@@ -15,7 +15,7 @@ div[open],
 /* 盤面 */
 div[tabindex="0"]>div:nth-child(1),
 /* キャラ */
-.MuiButtonBase-root+div+div,
+.MuiButtonBase-root+div+div:not(.MuiPaper-root),
 .MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded+div,
 /* チャット */
 .MuiDrawer-root.MuiDrawer-docked {
