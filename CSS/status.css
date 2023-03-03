@@ -46,6 +46,7 @@ div[tabindex="0"]>div:nth-child(3),
 
 /**************************
 　特定のキャラだけ表示（1からスタート）
+.MuiButtonBase-root+div+div>div:nth-child(1),
 .MuiPaper-rounded+div>div:nth-child(1) {
   display: flex;
 }
@@ -53,6 +54,7 @@ div[tabindex="0"]>div:nth-child(3),
 
 /**************************
 　横並び（200の倍数）
+.MuiButtonBase-root+div+div>div>div>div,
 .MuiPaper-rounded+div>div>div>div {
   max-width: 600px;
 }
@@ -62,6 +64,7 @@ div[tabindex="0"]>div:nth-child(3),
 　ステータス
 **************************/
 /* 上下の調整 */
+.MuiButtonBase-root+div+div,
 .MuiPaper-rounded+div {
   top: 0;
   padding: 0;
@@ -73,6 +76,7 @@ div[tabindex="0"]>div:nth-child(3),
 }
 
 /* 全て非表示にする */
+.MuiButtonBase-root+div+div>div,
 .MuiPaper-rounded+div>div {
   display: none;
 }
@@ -82,12 +86,15 @@ div[tabindex="0"]>div:nth-child(3),
   font-size: 2rem;
 }
 
+.MuiButtonBase-root+div+div>div>div>div>div,
+.MuiButtonBase-root+div+div>div>div>div>div>div:nth-child(2)>div,
 .MuiPaper-rounded+div>div>div>div>div,
 .MuiPaper-rounded+div>div>div>div>div>div:nth-child(2)>div {
   height: 48px;
 }
 
 /* margin分短くする */
+.MuiButtonBase-root+div+div>div>div>div>div,
 .MuiPaper-rounded+div>div>div>div>div {
   width: 196px;
 }
