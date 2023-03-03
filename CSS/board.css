@@ -9,6 +9,7 @@ body {
 　個別
 **************************/
 /* キャラ */
+.MuiButtonBase-root+div+div,
 .MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded+div,
 /* チャット */
 .MuiDrawer-root.MuiDrawer-docked,
