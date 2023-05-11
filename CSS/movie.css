@@ -1,0 +1,51 @@
+/* OBS */
+body {
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+/**************************
+　個別
+**************************/
+/* バックドロップ */
+.MuiBackdrop-root,
+/* カットイン */
+div[open],
+/* 背景 */
+.MuiPaper-root.MuiAppBar-root.MuiAppBar-positionFixed.MuiAppBar-colorDefault.MuiPaper-elevation0+div,
+/* 盤面 */
+div[tabindex="0"]>div:nth-child(1),
+/* キャラ */
+.MuiButtonBase-root+div+div,
+.MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded+div,
+/* チャット */
+.MuiDrawer-root.MuiDrawer-docked,
+/* 吹き出し */
+.MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded {
+  display: none !important;
+}
+
+/**************************
+　共通
+**************************/
+/* モーダル削除 
+[role="presentation"],*/
+/* ヘッダー削除 */
+/* headerのみだとチャットのタブも消える */
+header>.MuiToolbar-gutters,
+/* 音量 */
+div[tabindex="0"]>div:nth-child(3),
+/* 拡大縮小 */
+.MuiButtonBase-root+div,
+/* 鉛筆ボタン */
+.MuiButtonBase-root.MuiFab-root,
+/* 監視モード */
+.MuiSnackbar-root,
+/* タイマー */
+.MuiPaper-elevation5,
+/* スクロールバー */
+::-webkit-scrollbar {
+  display: none !important;
+}
+
