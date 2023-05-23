@@ -1,0 +1,189 @@
+/* OBS */
+body {
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+:root {
+  --background-color: rgb(0, 0, 0);
+  --background-padding: 8px 8px 8px 8px;
+  --border-color: rgb(255, 255, 255);
+  --border-image: url();
+  --border-width: 2px;
+  --border-radius: 10px;
+  --border-shadow: 0;
+  --width: 960px;
+}
+
+:root {
+  --font-size-name: 1.6rem;
+  --font-color-name: rgb(245, 245, 245);
+  --font-color-name-shadow: 0;
+  --font-size-dice: 1.6rem;
+  --font-color-dice: rgb(33 150 243);
+  --font-color-dice-shadow: 0;
+  --font-size-main: 2rem;
+  --font-color-main: rgb(245, 245, 245);
+  --font-color-main-shadow: 0;
+
+  --image-background: rgb(255, 255, 255);
+  --image-width: 120px;
+  --image-height: 120px;
+  --image-border-color: rgb(0, 0, 0);
+  --image-border-width: 6px;
+  --image-border-radius: 50%;
+  --image-margin: 5px;
+
+  /* or 'none' */
+  --image-display: block;
+  --dice-display: block;
+}
+
+/*
+:root {
+  --image-background: transparent;
+  --image-width: 240px;
+  --image-height: auto;
+  --image-border-width: 0;
+  --image-border-radius: 0;
+  --image-margin: 0;
+}
+*/
+
+/**************************
+　個別
+**************************/
+/* カットイン */
+div[open],
+/* 背景 */
+.MuiPaper-root.MuiAppBar-root.MuiAppBar-positionFixed.MuiAppBar-colorDefault.MuiPaper-elevation0+div,
+/* 盤面 */
+div[tabindex="0"]>div:nth-child(1),
+/* キャラ */
+.MuiButtonBase-root+div+div:not(.MuiPaper-root),
+.MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded+div,
+/* チャット */
+.MuiDrawer-root.MuiDrawer-docked {
+  display: none !important;
+}
+
+/**************************
+　共通
+**************************/
+/* モーダル削除 */
+[role="presentation"],
+/* ヘッダー削除 */
+/* headerのみだとチャットのタブも消える */
+header>.MuiToolbar-gutters,
+/* 音量 */
+div[tabindex="0"]>div:nth-child(3),
+/* 拡大縮小 */
+.MuiButtonBase-root+div,
+/* 鉛筆ボタン */
+.MuiButtonBase-root.MuiFab-root,
+/* 監視モード */
+.MuiSnackbar-root,
+/* タイマー */
+.MuiPaper-elevation5,
+/* スクロールバー */
+::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* 盤面 */
+div[tabindex="0"] {
+  width: 100% !important;
+}
+
+/**************************
+　吹き出し
+**************************/
+/* 全体の横幅 */
+.MuiPaper-root {
+  max-width: 960px;
+}
+
+/* タイトルの方 */
+.MuiTypography-subtitle2,
+.MuiTypography-body2 {
+  font-size: 1.6rem;
+}
+
+.MuiToolbar-gutters {
+  padding: 12px 24px;
+}
+
+/* ログの方 */
+.MuiTypography-body1 {
+  font-size: 2rem;
+}
+
+.MuiToolbar-root+div {
+  padding: 0px 24px 16px;
+  height: 160px;
+}
+
+/* アイコン */
+.MuiPaper-root>img {
+  display: var(--image-display);
+  width: var(--image-width);
+  height: var(--image-height);
+  margin-bottom: var(--image-margin);
+  background: var(--image-background);
+  border: solid var(--image-border-width) var(--image-border-color);
+  border-radius: var(--image-border-radius);
+  object-fit: cover;
+  object-position: top;
+}
+
+.MuiPaper-root>img[src=""] {
+  display: none;
+}
+
+/* カスタム用 */
+.MuiPaper-root {
+  background-color: transparent;
+  max-width: var(--width);
+}
+
+.MuiPaper-root>.MuiPaper-root {
+  padding: var(--background-padding);
+  background: var(--background-color);
+  border: solid var(--border-width) var(--border-color);
+  border-radius: var(--border-radius);
+  border-image: var(--border-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.MuiPaper-elevation1 {
+  box-shadow: var(--border-shadow);
+}
+
+/* 名前 */
+.MuiTypography-subtitle2 {
+  font-size: var(--font-size-name);
+  color: var(--font-color-name);
+  text-shadow: var(--font-color-name-shadow);
+}
+
+/* ダイス結果 */
+.MuiTypography-body2 {
+  font-size: var(--font-size-dice);
+  color: var(--font-color-dice);
+  text-shadow: var(--font-color-dice-shadow);
+}
+
+/* 本文 */
+.MuiTypography-body1 {
+  font-size: var(--font-size-main);
+  color: var(--font-color-main);
+  text-shadow: var(--font-color-main-shadow);
+}
+
+/* ダイス */
+.MuiPaper-root>div:nth-child(1) {
+  display: var(--dice-display);
+}
