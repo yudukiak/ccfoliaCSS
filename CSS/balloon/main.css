@@ -98,10 +98,6 @@ div[tabindex="0"] {
 /**************************
 　吹き出し
 **************************/
-/* 全体の横幅 */
-.MuiPaper-root {
-  max-width: 960px;
-}
 
 /* タイトルの方 */
 .MuiTypography-subtitle2,
@@ -141,9 +137,12 @@ div[tabindex="0"] {
 }
 
 /* カスタム用 */
-.MuiPaper-root {
+div[tabindex="0"]>.MuiPaper-root {
   background-color: transparent;
-  max-width: var(--width);
+  max-width: var(--balloon-width);
+  left: 5px;
+  right: 5px;
+  bottom: 10px;
 }
 
 .MuiPaper-root>.MuiPaper-root {
@@ -185,4 +184,5 @@ div[tabindex="0"] {
 /* ダイス */
 .MuiPaper-root>div:nth-child(1) {
   display: var(--dice-display);
+  margin-bottom: var(--image-margin);
 }
