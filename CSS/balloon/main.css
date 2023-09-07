@@ -5,34 +5,34 @@ body {
   overflow: hidden;
 }
 
-/* ボックス */
 :root {
-  --balloon-background-color: rgb(0, 0, 0);
-  --balloon-background-padding: 8px 8px 8px 8px;
-  --balloon-border-color: rgb(255, 255, 255);
-  --balloon-border-image: url();
-  --balloon-border-width: 2px;
-  --balloon-border-radius: 10px;
-  --balloon-border-shadow: 0;
+  /* ボックス */
+  --balloon-background-color: var(--background-color, rgb(0, 0, 0));
+  --balloon-background-padding: var(--background-padding, 8px 8px 8px 8px);
+  --balloon-border-color: var(--border-color, rgb(255, 255, 255));
+  --balloon-border-image: var(--border-image, url());
+  --balloon-border-width: var(--border-width, 2px);
+  --balloon-border-radius: var(--border-radius, 10px);
+  --balloon-border-shadow: var(--border-shadow, 0);
   --balloon-width: 960px;
   /* テキスト */
   --font-size-name: 1.6rem;
-  --font-color-name: rgb(245, 245, 245);
-  --font-color-name-shadow: 0;
-  --font-size-dice: 1.6rem;
-  --font-color-dice: rgb(33 150 243);
-  --font-color-dice-shadow: 0;
-  --font-size-main: 2rem;
-  --font-color-main: rgb(245, 245, 245);
-  --font-color-main-shadow: 0;
+  --font-color-name: var(--font-color, rgb(245, 245, 245));
+  --font-color-name-shadow: var(--font-color-shadow, 0);
+  --font-size-dice: calc(var(--font-size, 1.6rem) + .1rem);
+  --font-color-dice: var(--font-color-success, rgb(33 150 243));
+  --font-color-dice-shadow: var(--font-color-success-shadow, 0);
+  --font-size-main: calc(var(--font-size, 1.5rem) + .5rem);
+  --font-color-main: var(--font-color, rgb(245, 245, 245));
+  --font-color-main-shadow: var(--font-color-shadow, 0);
   /* イメージ */
-  --image-background: rgb(255, 255, 255);
+  --image-background: var(--background-color, rgb(255, 255, 255));
   --image-width: 120px;
   --image-height: 120px;
-  --image-border-color: rgb(0, 0, 0);
-  --image-border-width: 6px;
+  --image-border-color: var(--border-color, rgb(0, 0, 0));
+  --image-border-width: var(--border-width, 6px);
   --image-border-radius: 50%;
-  --image-margin: 5px;
+  --image-margin: .5rem;
   /* 非表示設定 'block' or 'none' */
   --image-display: block;
   --dice-display: block;
