@@ -5,18 +5,17 @@ body {
   overflow: hidden;
 }
 
+/* ボックス */
 :root {
-  --background-color: rgb(0, 0, 0);
-  --background-padding: 8px 8px 8px 8px;
-  --border-color: rgb(255, 255, 255);
-  --border-image: url();
-  --border-width: 2px;
-  --border-radius: 10px;
-  --border-shadow: 0;
-  --width: 960px;
-}
-
-:root {
+  --balloon-background-color: rgb(0, 0, 0);
+  --balloon-background-padding: 8px 8px 8px 8px;
+  --balloon-border-color: rgb(255, 255, 255);
+  --balloon-border-image: url();
+  --balloon-border-width: 2px;
+  --balloon-border-radius: 10px;
+  --balloon-border-shadow: 0;
+  --balloon-width: 960px;
+  /* テキスト */
   --font-size-name: 1.6rem;
   --font-color-name: rgb(245, 245, 245);
   --font-color-name-shadow: 0;
@@ -26,7 +25,7 @@ body {
   --font-size-main: 2rem;
   --font-color-main: rgb(245, 245, 245);
   --font-color-main-shadow: 0;
-
+  /* イメージ */
   --image-background: rgb(255, 255, 255);
   --image-width: 120px;
   --image-height: 120px;
@@ -34,12 +33,12 @@ body {
   --image-border-width: 6px;
   --image-border-radius: 50%;
   --image-margin: 5px;
-
-  /* or 'none' */
+  /* 非表示設定 'block' or 'none' */
   --image-display: block;
   --dice-display: block;
 }
 
+/* ココフォリア デフォルトの表示 */
 /*
 :root {
   --image-background: transparent;
@@ -148,18 +147,18 @@ div[tabindex="0"] {
 }
 
 .MuiPaper-root>.MuiPaper-root {
-  padding: var(--background-padding);
-  background: var(--background-color);
-  border: solid var(--border-width) var(--border-color);
-  border-radius: var(--border-radius);
-  border-image: var(--border-image);
+  padding: var(--balloon-background-padding);
+  background: var(--balloon-background-color);
+  border: solid var(--balloon-border-width) var(--balloon-border-color);
+  border-radius: var(--balloon-border-radius);
+  border-image: var(--balloon-border-image);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .MuiPaper-elevation1 {
-  box-shadow: var(--border-shadow);
+  box-shadow: var(--balloon-border-shadow);
 }
 
 /* 名前 */
