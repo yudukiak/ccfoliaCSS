@@ -36,6 +36,9 @@ body {
   /* 非表示設定 'block' or 'none' */
   --image-display: block;
   --dice-display: block;
+  /* 非表示設定 'inline-flex' or 'none' */
+  --skip-display: inline-flex;
+  --close-display: inline-flex;
 }
 
 /* ココフォリア デフォルトの表示 */
@@ -185,4 +188,14 @@ div[tabindex="0"]>.MuiPaper-root {
 .MuiPaper-root>div:nth-child(1) {
   display: var(--dice-display);
   margin-bottom: var(--image-margin);
+}
+
+/* スキップボタン */
+[title="スキップ"] {
+  display: var(--skip-display);
+}
+
+/* 閉じるボタン */
+[title="閉じる"] {
+  display: var(--close-display);
 }
