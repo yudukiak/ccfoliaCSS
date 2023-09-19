@@ -40,6 +40,8 @@ div[tabindex="0"]>div:nth-child(3),
 .MuiSnackbar-root,
 /* タイマー */
 .MuiPaper-elevation5,
+/* 新しいダイスを非表示 */
+div[style="position: relative; width: 100%; height: 100%; overflow: hidden;"],
 /* スクロールバー */
 ::-webkit-scrollbar {
   display: none !important;
