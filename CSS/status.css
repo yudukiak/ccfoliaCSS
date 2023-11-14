@@ -49,16 +49,14 @@ div[style="position: relative; width: 100%; height: 100%; overflow: hidden;"],
 
 /**************************
 　特定のキャラだけ表示（1からスタート）
-.MuiButtonBase-root+div+div>div:nth-child(1),
-.MuiPaper-rounded+div>div:nth-child(1) {
-  display: flex;
+div[tabindex="0"]>div:nth-last-child(2)>div:nth-child(1) {
+  display: flex;    
 }
 **************************/
 
 /**************************
 　横並び（200の倍数）
-.MuiButtonBase-root+div+div>div>div>div,
-.MuiPaper-rounded+div>div>div>div {
+div[tabindex="0"]>div:nth-last-child(2)>div>div>div {
   max-width: 600px;
 }
 **************************/
@@ -66,43 +64,36 @@ div[style="position: relative; width: 100%; height: 100%; overflow: hidden;"],
 /**************************
 　ステータス
 **************************/
-/* 上下の調整 */
-.MuiButtonBase-root+div+div,
-.MuiPaper-rounded+div {
+/* ステータスの大枠 */
+div[tabindex="0"]>div:nth-last-child(2) {
   top: 0;
   padding: 0;
 }
 
-/* キャラアイコンを削除 */
+/* キャラごとに非表示  */
+div[tabindex="0"]>div:nth-last-child(2)>div {
+    display: none;
+}
+
+/* ステータス毎 */
+.MuiBadge-root+div>div>div {
+  height: 48px;
+  width: 196px;
+}
+
+/* 背景 */
+.MuiBadge-root+div>div>div>div:nth-child(2)>div {
+  height: 48px;
+}
+
+/* キャラアイコン */
 .MuiBadge-root {
   display: none;
 }
 
-/* 全て非表示にする */
-.MuiButtonBase-root+div+div>div,
-.MuiPaper-rounded+div>div {
-  display: none;
-}
-
-/* サイズ調整 */
+/* テキスト */
 .MuiTypography-body2 {
   font-size: 2rem;
-}
-
-.MuiButtonBase-root+div+div>div>div>div>div,
-.MuiButtonBase-root+div+div>div>div>div>div>div:nth-child(2)>div,
-.MuiPaper-rounded+div>div>div>div>div,
-.MuiPaper-rounded+div>div>div>div>div>div:nth-child(2)>div {
-  height: 48px;
-}
-
-/* margin分短くする */
-.MuiButtonBase-root+div+div>div>div>div>div,
-.MuiPaper-rounded+div>div>div>div>div {
-  width: 196px;
-}
-
-.MuiTypography-body2 {
   display: flex;
   align-items: center;
   padding: 10px;
