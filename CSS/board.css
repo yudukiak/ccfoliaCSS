@@ -21,7 +21,7 @@ body {
 /* チャット */
 .MuiDrawer-root.MuiDrawer-docked,
 /* 吹き出し */
-.MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded {
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation6 {
   display: none !important;
 }
 

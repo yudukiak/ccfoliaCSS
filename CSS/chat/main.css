@@ -25,7 +25,7 @@ div[tabindex="0"]>div:nth-child(1),
 [tabindex="0"]>div:nth-child(7):not(.MuiPaper-root),
 [tabindex="0"]>div:nth-child(8):not(.MuiPaper-root),
 /* 吹き出し */
-.MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded,
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation6,
 /* 入力欄 */
 form > div {
   display: none !important;
