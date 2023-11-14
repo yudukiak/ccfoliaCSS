@@ -16,13 +16,20 @@ div[open],
 .MuiPaper-root.MuiAppBar-root.MuiAppBar-positionFixed.MuiAppBar-colorDefault.MuiPaper-elevation0+div,
 /* 盤面 */
 div[tabindex="0"]>div:nth-child(1),
-/* キャラ */
-.MuiButtonBase-root+div+div,
-.MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded+div,
+/*
+  キャラ
+  6: 初期位置
+  7: タイマー or 吹き出し
+  8: タイマー and 吹き出し
+  ※拡大縮小が消える不都合あり
+*/
+[tabindex="0"]>div:nth-child(6):not(.MuiPaper-root),
+[tabindex="0"]>div:nth-child(7):not(.MuiPaper-root),
+[tabindex="0"]>div:nth-child(8):not(.MuiPaper-root),
 /* チャット */
 .MuiDrawer-root.MuiDrawer-docked,
 /* 吹き出し */
-.MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded {
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation6 {
   display: none !important;
 }
 
@@ -37,7 +44,8 @@ header>.MuiToolbar-gutters,
 /* 音量 */
 div[tabindex="0"]>div:nth-child(3),
 /* 拡大縮小 */
-.MuiButtonBase-root+div,
+button.MuiButtonBase-root:not(.MuiTab-root),
+button.MuiButtonBase-root+span,
 /* 鉛筆ボタン */
 .MuiButtonBase-root.MuiFab-root,
 /* 監視モード */
@@ -55,4 +63,9 @@ div[tabindex="0"]>div:nth-child(3),
 /* 盤面 */
 div[tabindex="0"] {
   width: 100% !important;
+}
+
+/* サイコロ見える調整 */
+[tabindex="0"]>div:nth-child(8):last-child {
+    display: block !important;
 }

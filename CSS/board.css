@@ -8,9 +8,16 @@ body {
 /**************************
 　個別
 **************************/
-/* キャラ */
-.MuiButtonBase-root+div+div,
-.MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded+div,
+/*
+  キャラ
+  6: 初期位置
+  7: タイマー or 吹き出し
+  8: タイマー and 吹き出し
+  ※拡大縮小が消える不都合あり
+*/
+[tabindex="0"]>div:nth-child(6):not(.MuiPaper-root),
+[tabindex="0"]>div:nth-child(7):not(.MuiPaper-root),
+[tabindex="0"]>div:nth-child(8):not(.MuiPaper-root),
 /* チャット */
 .MuiDrawer-root.MuiDrawer-docked,
 /* 吹き出し */
@@ -29,7 +36,8 @@ header>.MuiToolbar-gutters,
 /* 音量 */
 div[tabindex="0"]>div:nth-child(3),
 /* 拡大縮小 */
-.MuiButtonBase-root+div,
+button.MuiButtonBase-root:not(.MuiTab-root),
+button.MuiButtonBase-root+span,
 /* 鉛筆ボタン */
 .MuiButtonBase-root.MuiFab-root,
 /* 監視モード */
@@ -47,6 +55,11 @@ div[style="position: relative; width: 100%; height: 100%; overflow: hidden;"],
 /* 盤面 */
 div[tabindex="0"] {
   width: 100% !important;
+}
+
+/* 盤面の枠線 */
+div[style^="touch-action"]>div[style^="transform: translate"]>div[style^="transform: scale"]>div:first-child {
+  outline: unset !important;
 }
 
 /* ポップアップ */
