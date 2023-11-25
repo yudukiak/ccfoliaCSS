@@ -156,6 +156,7 @@ div[tabindex="0"]>.MuiPaper-root {
   left: 5px;
   right: 5px;
   bottom: 10px;
+  border-radius: var(--balloon-border-radius);
 }
 
 .MuiPaper-root>.MuiPaper-root {
