@@ -1,6 +1,8 @@
-.MuiList-root>div:nth-child(1)>div>div {
-    /*height: 50vh !important;*/
-    height: auto !important;
-    position: absolute;
-    bottom: 0;
-  }
+.MuiList-root>div:nth-child(1) {
+  height: 100% !important;
+}
+
+.MuiList-root>div:nth-child(1)>div {
+  bottom: 0;
+  top: auto !important;
+}
