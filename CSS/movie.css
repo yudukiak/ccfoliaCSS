@@ -44,7 +44,7 @@ header>.MuiToolbar-gutters,
 /* 音量 */
 div[tabindex="0"]>div:nth-child(3),
 /* 拡大縮小 */
-button.MuiButtonBase-root:not(.MuiTab-root),
+button.MuiButtonBase-root:not(.MuiTab-root, .MuiIconButton-sizeLarge),
 button.MuiButtonBase-root+span,
 /* 鉛筆ボタン */
 .MuiButtonBase-root.MuiFab-root,
