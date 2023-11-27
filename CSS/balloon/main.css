@@ -202,11 +202,11 @@ div[tabindex="0"]>.MuiPaper-root {
 }
 
 /* スキップボタン */
-[title="スキップ"] {
+[aria-label="スキップ"] {
   display: var(--skip-display);
 }
 
 /* 閉じるボタン */
-[title="閉じる"] {
+[aria-label="閉じる"] {
   display: var(--close-display);
 }
