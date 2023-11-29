@@ -32,7 +32,7 @@ header>.MuiToolbar-gutters,
 /* 音量 */
 div[tabindex="0"]>div:nth-child(3),
 /* 拡大縮小 */
-button.MuiButtonBase-root:not(.MuiTab-root),
+:not(.MuiAvatar-root)>button.MuiButtonBase-root:not(.MuiTab-root, .MuiIconButton-sizeLarge),
 button.MuiButtonBase-root+span,
 /* 鉛筆ボタン */
 .MuiButtonBase-root.MuiFab-root,
@@ -49,15 +49,8 @@ div[style="position: relative; width: 100%; height: 100%; overflow: hidden;"],
 
 /**************************
 　特定のキャラだけ表示（1からスタート）
-div[tabindex="0"]>div:nth-last-child(2)>div:nth-child(1) {
+div[tabindex="0"]>div>div:nth-child(1) {
   display: flex;    
-}
-**************************/
-
-/**************************
-　横並び（200の倍数）
-div[tabindex="0"]>div:nth-last-child(2)>div>div>div {
-  max-width: 600px;
 }
 **************************/
 
@@ -65,36 +58,143 @@ div[tabindex="0"]>div:nth-last-child(2)>div>div>div {
 　ステータス
 **************************/
 /* ステータスの大枠 */
-div[tabindex="0"]>div:nth-last-child(2) {
+div[tabindex="0"]>div {
   top: 0;
-  padding: 0;
+  padding: 1.5rem .5rem;
+}
+div[tabindex="0"]>div>div {
+  margin-bottom: 2rem;
+  display: none; 
 }
 
-/* キャラごとに非表示  */
-div[tabindex="0"]>div:nth-last-child(2)>div {
-    display: none;
+/* 初期値 */
+:root {
+    --avatar-height: 150px;
+    --avatar-width: 150px;
+    --avatar-background: rgba(0, 0, 0, 0.64);
+    --avatar-border-size: 3px;
+    --avatar-border-style: solid;
+    --avatar-border-color: rgb(245, 245, 245);
+    --avatar-border-radius: 10px;
+
+    --badge-height: 40px;
+    --badge-width: 40px;
+    --badge-background: rgb(245, 245, 245);
+    --badge-font-size: 1.5rem;
+    --badge-font-color: rgb(66, 66, 66);
+
+    --status-column: 1;
+    --status-height: 50px;
+    --status-width: 250px;
+    --status-background: var(--background-color, rgb(245, 245, 245));
+    --status-font-size: 2rem;
+    --status-font-color: rgb(66, 66, 66);
+    --status-font-secondary-color: var(--font-color-fail, rgb(154, 0, 54));
+    --status-font-border-color: rgb(245, 245, 245);
+    --status-border-width: var(--border-width, 0px);
+    --status-border-style: solid;
+    --status-border-color: var(--border-color, rgb(245, 245, 245));
+    --status-border-image: var(--border-image, url());
+    --status-border-radius: var(--border-radius, 0);
+    --status-border-shadow: var(--border-shadow, 0);
 }
 
-/* ステータス毎 */
-.MuiBadge-root+div>div>div {
-  height: 48px;
-  width: 196px;
+/* アバターを消す 
+:root {
+    --avatar-padding: 0;
+    --avatar-display: none;
 }
+*/
 
-/* 背景 */
-.MuiBadge-root+div>div>div>div:nth-child(2)>div {
-  height: 48px;
+/* 分母を消す（0だけ消すのは不可能）
+:root {
+    --status-denom-font-size: 0;
 }
+*/
 
-/* キャラアイコン */
+/* アバター大枠 */
 .MuiBadge-root {
-  display: none;
+    display: var(--avatar-display, block);
+}
+
+/* アバター画像 */
+.MuiAvatar-root {
+    height: var(--avatar-height);
+    width: var(--avatar-width);
+    background: var(--avatar-background);
+    border: var(--avatar-border-size) var(--avatar-border-style) var(--avatar-border-color);
+    border-radius: var(--avatar-border-radius);
+    align-items: start;
+}
+
+/* バッジ */
+.MuiBadge-badge {
+    height: var(--badge-height);
+    width: var(--badge-width);
+    border-radius: 50%;
+    font-size: var(--badge-font-size);
+    color: var(--badge-font-color) !important;
+    background: var(--badge-background) !important;
+}
+
+
+/* ステータス 大枠 */
+.MuiBadge-root+div>div {
+    max-width: calc((var(--status-width) + var(--status-border-width)*2 + 8px) * var(--status-column));
+}
+
+/* ステータス毎 大枠 */
+.MuiBadge-root+div>div>div {
+    height: var(--status-height);
+    width: var(--status-width);
+    border: var(--status-border-width) var(--status-border-style) var(--status-border-color);
+    border-image: var(--status-border-image);
+    border-radius: var(--status-border-radius);
+    box-shadow: var(--status-border-shadow);
+    overflow: hidden;
+}
+
+/* ステータス 背景 大枠 */
+.MuiBadge-root+div>div>div>div {
+    height: var(--status-height);
+    width: var(--status-width);
+}
+
+/* ステータス 背景 */
+.MuiBadge-root+div>div>div>div:nth-child(2)>div {
+    height: var(--status-height);
+    background: var(--status-background);
 }
 
 /* テキスト */
 .MuiTypography-body2 {
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-  padding: 10px;
+    font-size: var(--status-font-size);
+    color: var(--status-font-color);
+    text-shadow:
+        var(--status-font-border-color) 1px 1px 0px,
+        var(--status-font-border-color) -1px -1px 0px,
+        var(--status-font-border-color) -1px 1px 0px,
+        var(--status-font-border-color) 1px -1px 0px,
+        var(--status-font-border-color) 0px 1px 0px,
+        var(--status-font-border-color) 0px -1px 0px,
+        var(--status-font-border-color) -1px 0px 0px,
+        var(--status-font-border-color) 1px 0px 0px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+/* 数値全体 */
+.MuiTypography-body2+.MuiTypography-body2 {
+    font-size: var(--status-denom-font-size, var(--status-font-size));
+}
+
+/* 分子 */
+.MuiTypography-body2+.MuiTypography-body2>span {
+    font-size: var(--status-font-size);
+}
+
+/* 赤文字 */
+[color="secondary"] {
+    color: var(--status-font-secondary-color)
 }
