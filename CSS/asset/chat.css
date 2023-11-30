@@ -1,0 +1,8 @@
+.MuiDrawer-root.MuiDrawer-docked {
+    display: none;
+}
+
+/* 盤面 */
+div[tabindex="0"] {
+    width: 100%;
+}

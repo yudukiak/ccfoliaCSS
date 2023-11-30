@@ -1,0 +1,3 @@
+div[tabindex="0"]>div:not([class])+div+div {
+    display: none;
+}
