@@ -157,11 +157,13 @@ p.MuiTypography-root {
   -webkit-line-clamp: var(--line-clamp);
 }
 
+.css-1l6qhgm,
 .MuiTypography-colorPrimary {
   color: var(--font-color-success);
   text-shadow: var(--font-color-success-shadow);
 }
 
+.css-1j13mke,
 .MuiTypography-colorSecondary {
   color: var(--font-color-fail);
   text-shadow: var(--font-color-fail-shadow);
