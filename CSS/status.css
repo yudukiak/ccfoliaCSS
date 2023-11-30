@@ -1,51 +1,18 @@
-/* OBS */
-body {
-  background-color: rgba(0, 0, 0, 0);
-  margin: 0px auto;
-  overflow: hidden;
-}
-
-/**************************
-　個別
-**************************/
-/* カットイン */
-div[open],
-/* 背景 */
-.MuiPaper-root.MuiAppBar-root.MuiAppBar-positionFixed.MuiAppBar-colorDefault.MuiPaper-elevation0+div,
-/* 盤面 */
-div[tabindex="0"]>div:nth-child(1),
-/* チャット */
-.MuiDrawer-root.MuiDrawer-docked,
-/* 吹き出し */
-.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation6 {
-  display: none !important;
-}
-
-/**************************
-　共通
-**************************/
-/* モーダル削除 */
-[role="presentation"],
-/* ヘッダー削除 */
-/* headerのみだとチャットのタブも消える */
-header>.MuiToolbar-gutters,
-/* 音量 */
-div[tabindex="0"]>div:nth-child(3),
-/* 拡大縮小 */
-:not(.MuiAvatar-root)>button.MuiButtonBase-root:not(.MuiTab-root, .MuiIconButton-sizeLarge),
-button.MuiButtonBase-root+span,
-/* 鉛筆ボタン */
-.MuiButtonBase-root.MuiFab-root,
-/* 監視モード */
-.MuiSnackbar-root,
-/* タイマー */
-.MuiPaper-elevation5,
-/* 新しいダイスを非表示 */
-div[style="position: relative; width: 100%; height: 100%; overflow: hidden;"],
-/* スクロールバー */
-::-webkit-scrollbar {
-  display: none !important;
-}
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/_obs.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/_scrollbar.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/balloon.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/board.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/boardBackground.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/chat.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/cutIn.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/edit.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/header.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/modal.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/monitoring.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/newDice.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/scaling.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/timer.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/volume.css");
 
 /**************************
 　特定のキャラだけ表示（1からスタート）
@@ -54,9 +21,6 @@ div[tabindex="0"]>div>div:nth-child(1) {
 }
 **************************/
 
-/**************************
-　ステータス
-**************************/
 /* ステータスの大枠 */
 div[tabindex="0"]>div {
   top: 0;
