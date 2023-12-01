@@ -275,3 +275,7 @@
 .MuiPaper-root>.MuiPaper-root:after {
   right: 10px;
 }
+
+.MuiPaper-root>.MuiPaper-root>div:nth-child(1) {
+  bottom: 105%;
+}
