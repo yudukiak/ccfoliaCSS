@@ -32,33 +32,33 @@ div[tabindex="0"]>div {
 /* キャラ毎のステータスを非表示 */
 div[tabindex="0"]>div>div {
   margin-bottom: 2rem;
-  display: none; 
+  display: none;
 }
 
 /* ステータス 大枠 */
 .MuiBadge-root+div>div {
-    max-width: calc((var(--status-width) + var(--status-border-width)*2 + 8px) * var(--status-column));
+  max-width: calc((var(--status-width) + var(--status-border-width)*2 + 8px) * var(--status-column));
 }
 
 /* ステータス毎 大枠 */
 .MuiBadge-root+div>div>div {
-    height: var(--status-height);
-    width: var(--status-width);
-    border: var(--status-border-width) var(--status-border-style) var(--status-border-color);
-    border-image: var(--status-border-image);
-    border-radius: var(--status-border-radius);
-    box-shadow: var(--status-border-shadow);
-    overflow: hidden;
+  height: var(--status-height);
+  width: var(--status-width);
+  border: var(--status-border-width) var(--status-border-style) var(--status-border-color);
+  border-image: var(--status-border-image);
+  border-radius: var(--status-border-radius);
+  box-shadow: var(--status-border-shadow);
+  overflow: hidden;
 }
 
 /* ステータス 背景 大枠 */
 .MuiBadge-root+div>div>div>div {
-    height: var(--status-height);
-    width: var(--status-width);
+  height: var(--status-height);
+  width: var(--status-width);
 }
 
 /* ステータス 背景 */
 .MuiBadge-root+div>div>div>div:nth-child(2)>div {
-    height: var(--status-height);
-    background: var(--status-background);
+  height: var(--status-height);
+  background: var(--status-background);
 }
