@@ -105,7 +105,7 @@ div[tabindex="0"]>.MuiPaper-root {
   max-width: var(--balloon-width);
   left: 5px;
   right: 5px;
-  bottom: 10px;
+  bottom: 20px;
   border-radius: var(--balloon-border-radius);
 }
 
