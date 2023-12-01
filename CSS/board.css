@@ -19,9 +19,7 @@ div[style^="touch-action"]>div[style^="transform: translate"]>div[style^="transf
 }
 
 /* ポップアップ */
-[role="tooltip"] * {
-  font-size: 21px !important;
+[role="tooltip"]>div {
+  font-size: 1.3rem !important;
   max-width: 1280px;
-  min-width: 720px;
-  margin: 24px auto;
 }
