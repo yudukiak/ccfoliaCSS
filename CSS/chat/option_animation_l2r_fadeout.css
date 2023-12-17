@@ -1,0 +1,35 @@
+:root {
+  --fadeout-sec: 20s;
+}
+
+.MuiList-root>div:nth-child(1)>div>div>div {
+  margin: 10px 10px 10px auto;
+}
+
+.MuiListItem-gutters {
+  animation:
+    fadeIn 2s ease 0s,
+    fadeOut 2s ease calc(var(--fadeout-sec) + 2s) forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
