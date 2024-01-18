@@ -92,6 +92,7 @@ hr {
 }
 
 .MuiTypography-body2 {
+  color: var(--font-color);
   font-size: var(--font-size)
 }
 
