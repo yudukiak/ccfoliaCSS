@@ -1,0 +1,3 @@
+.react-draggable:not(figure, .movable) {
+  display: none !important;
+}
