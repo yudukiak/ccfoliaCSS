@@ -10,6 +10,7 @@
 | board.css           | 盤面上のUIを消す             |
 | boardBackground.css | 盤面の背景を消す             |
 | boardForeground.css | 盤面の「前景」を消す         |
+| character.css       | 盤面の「キャラクター」を消す |
 | chat.css            | ルームチャットのUIを消す     |
 | cutIn.css           | カットインを消す             |
 | diceSymbol.css      | 「ダイスシンボル」を消す     |
@@ -36,6 +37,7 @@
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/board.css");
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/boardBackground.css");
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/boardForeground.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/character.css");
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/chat.css");
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/cutIn.css");
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/diceSymbol.css");
