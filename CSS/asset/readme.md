@@ -1,7 +1,7 @@
 | file                | description                  |
 | ------------------- | ---------------------------- |
-| _obs.css            |                              |
-| _scrollbar.css      |                              |
+| -obs.css            |                              |
+| -scrollbar.css      |                              |
 | balloon.css         | 吹き出しを消す               |
 | board.css           | 盤面上のUIを消す             |
 | boardBackground.css | 盤面の背景を消す             |
@@ -18,8 +18,8 @@
 | volume.css          | BGM周りのUIを消す            |
 
 ```css
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/_obs.css");
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/_scrollbar.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/-obs.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/-scrollbar.css");
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/balloon.css");
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/board.css");
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/boardBackground.css");
