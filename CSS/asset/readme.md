@@ -1,3 +1,7 @@
+# 各種UIを消すカスタムCSS
+
+## ファイルの説明
+
 | file                | description                  |
 | ------------------- | ---------------------------- |
 | -obs.css            |                              |
@@ -5,17 +9,25 @@
 | balloon.css         | 吹き出しを消す               |
 | board.css           | 盤面上のUIを消す             |
 | boardBackground.css | 盤面の背景を消す             |
+| boardForeground.css | 盤面の「前景」を消す         |
 | chat.css            | ルームチャットのUIを消す     |
 | cutIn.css           | カットインを消す             |
+| diceSymbol.css      | 「ダイスシンボル」を消す     |
 | edit.css            | 鉛筆マークを消す             |
 | header.css          | ヘッダー周りのUIを消す       |
+| markerPanel.css     | 「マーカーパネル」「カードデッキ」消す（※1） |
 | modal.css           | 広告動画のUIを消す           |
 | monitoring.css      | 監視モードのお知らせを消す   |
 | newDice.css         | 盤面上を転がるダイスを消す   |
 | scaling.css         | 拡大縮小のUIを消す           |
+| screenPanel.css     | 「スクリーンパネル」を消す   |
 | status.css          | キャラのステータスのUIを消す |
 | timer.css           | タイマーのUIを消す           |
 | volume.css          | BGM周りのUIを消す            |
+
+- ※1 マーカーパネルとカードデッキの判定ができない為、双方消える仕様
+
+## 使い方
 
 ```css
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/-obs.css");
