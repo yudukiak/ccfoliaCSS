@@ -146,7 +146,7 @@ div[tabindex="0"]>.MuiPaper-root {
 }
 
 /* ダイス */
-.MuiPaper-root>div:nth-child(1) {
+.MuiPaper-root>.MuiPaper-root>div:nth-child(1) {
   display: var(--dice-display);
   margin-bottom: var(--image-margin);
 }
