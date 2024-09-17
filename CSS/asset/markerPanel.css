@@ -1,4 +1,3 @@
-/* マーカーパネルだけではなくカードデッキも消えるので注意 */
-.movable.react-draggable:not([tabindex='-1']) {
-  display: none !important;
+.bmUstz {
+  display: none;
 }
