@@ -10,13 +10,14 @@
 | board.css           | 盤面そのものを消す                           |
 | boardBackground.css | 盤面の「背景」を消す                         |
 | boardForeground.css | 盤面の「前景」を消す                         |
+| cardDeck.css        | 「カードデッキ」を消す                       |
 | character.css       | 盤面の「キャラクター」を消す                 |
 | chat.css            | 「ルームチャット」を消す                     |
 | cutIn.css           | 「カットイン」を消す                         |
 | diceSymbol.css      | 「ダイスシンボル」を消す                     |
 | edit.css            | 鉛筆マークを消す                             |
 | header.css          | ヘッダー周りのUIを消す                       |
-| markerPanel.css     | 「マーカーパネル」「カードデッキ」消す（※1）|
+| markerPanel.css     | 「マーカーパネル」を消す                     |
 | modal.css           | 広告動画のUIを消す                           |
 | monitoring.css      | 監視モードのお知らせを消す                   |
 | newDice.css         | 盤面上を転がるダイスを消す                   |
@@ -35,6 +36,7 @@
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/board.css");
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/boardBackground.css");
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/boardForeground.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/cardDeck.csss");
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/character.css");
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/chat.css");
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/cutIn.css");
