@@ -24,13 +24,13 @@ div[tabindex="0"]>div>div:nth-child(1) {
 **************************/
 
 /* キャラ毎のステータス 大枠 */
-div[tabindex="0"]>div {
+div[tabindex="0"][style^="right:"]>div {
   top: 0;
   padding: 1.5rem .5rem;
 }
 
 /* キャラ毎のステータスを非表示 */
-div[tabindex="0"]>div>div {
+div[tabindex="0"][style^="right:"]>div>div {
   margin-bottom: 2rem;
   display: none;
 }
