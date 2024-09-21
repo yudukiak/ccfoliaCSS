@@ -29,8 +29,12 @@
   --font-color-name: var(--font-color, rgb(245, 245, 245));
   --font-color-name-shadow: var(--font-color-shadow, 0);
   --font-size-dice: calc(var(--font-size, 1.6rem) + .1rem);
-  --font-color-dice: var(--font-color-success, rgb(33 150 243));
-  --font-color-dice-shadow: var(--font-color-success-shadow, 0);
+  --font-color-dice: rgba(255, 255, 255, 0.7);
+  --font-color-dice-shadow: 0;
+  --font-color-fail: rgb(245, 0, 87);
+  --font-color-fail-shadow: 0;
+  --font-color-success: rgb(33, 150, 243);
+  --font-color-success-shadow: 0;
   --font-size-main: calc(var(--font-size, 1.5rem) + .5rem);
   --font-color-main: var(--font-color, rgb(245, 245, 245));
   --font-color-main-shadow: var(--font-color-shadow, 0);
@@ -136,6 +140,18 @@ div[tabindex="0"]>.MuiPaper-root {
   font-size: var(--font-size-dice);
   color: var(--font-color-dice);
   text-shadow: var(--font-color-dice-shadow);
+}
+
+/* ダイス結果（成功） */
+.css-1l6qhgm {
+  color: var(--font-color-success);
+  text-shadow: var(--font-color-success-shadow);
+}
+
+/* ダイス結果（失敗） */
+.css-1j13mke {
+  color: var(--font-color-fail);
+  text-shadow: var(--font-color-fail-shadow);
 }
 
 /* 本文 */
