@@ -1,0 +1,67 @@
+@import url('https://yudukiak.github.io/ccfoliaCSS/CSS/asset/-obs.css');
+@import url('https://yudukiak.github.io/ccfoliaCSS/CSS/asset/-scrollbar.css');
+@import url('https://yudukiak.github.io/ccfoliaCSS/CSS/asset/balloon.css');
+@import url('https://yudukiak.github.io/ccfoliaCSS/CSS/asset/board.css');
+@import url('https://yudukiak.github.io/ccfoliaCSS/CSS/asset/boardBackground.css');
+@import url('https://yudukiak.github.io/ccfoliaCSS/CSS/asset/chat.css');
+@import url('https://yudukiak.github.io/ccfoliaCSS/CSS/asset/cutIn.css');
+@import url('https://yudukiak.github.io/ccfoliaCSS/CSS/asset/edit.css');
+@import url('https://yudukiak.github.io/ccfoliaCSS/CSS/asset/header.css');
+@import url('https://yudukiak.github.io/ccfoliaCSS/CSS/asset/modal.css');
+@import url('https://yudukiak.github.io/ccfoliaCSS/CSS/asset/monitoring.css');
+@import url('https://yudukiak.github.io/ccfoliaCSS/CSS/asset/newDice.css');
+@import url('https://yudukiak.github.io/ccfoliaCSS/CSS/asset/scaling.css');
+@import url('https://yudukiak.github.io/ccfoliaCSS/CSS/asset/status.css');
+@import url('https://yudukiak.github.io/ccfoliaCSS/CSS/asset/timer.css');
+
+:root {
+  --font-color: rgb(48, 40, 51);
+  --font-size: 1.5rem;
+}
+
+#root > div > div[tabindex='0'][style] > div:nth-child(3) {
+  border: none;
+  display: block;
+  left: 0;
+  right: auto;
+  top: 0;
+  width: 100%;
+}
+
+#root > div > div[tabindex='0'][style] > div:nth-child(3):hover {
+  background-color: transparent;
+}
+
+#root > div > div[tabindex='0'][style] > div:nth-child(3) > div {
+  display: block;
+  padding: 0;
+}
+
+#root > div > div[tabindex='0'][style] > div:nth-child(3) > div > div {
+  margin: 0;
+}
+
+.MuiSlider-root,
+.MuiIconButton-sizeSmall,
+.MuiButton-label {
+  display: none;
+}
+
+.MuiButton-root {
+  display: block;
+  font-size: 0;
+  height: calc(var(--font-size) * 2);
+  overflow: hidden;
+  text-align: left;
+  white-space: pre-wrap;
+  width: 100%;
+}
+.MuiButton-root:after {
+  color: var(--font-color);
+  content: '' attr(aria-label);
+  font-size: var(--font-size);
+}
+
+.MuiButton-root:hover {
+  background-color: transparent;
+}
