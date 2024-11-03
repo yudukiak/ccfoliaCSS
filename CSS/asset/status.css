@@ -1,4 +1,4 @@
-div[tabindex="0"]>div:not([class])+div+div:not(.MuiPaper-root),
+div[tabindex="0"]>div:not([class])+div[class]+div:not(.MuiPaper-root),
 div.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation6+div {
     display: none;
 }
