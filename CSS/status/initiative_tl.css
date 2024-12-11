@@ -1,0 +1,7 @@
+.MuiBadge-root {
+  margin-left: .5rem;
+}
+
+.MuiBadge-badge.MuiBadge-standard {
+  right:  calc(var(--avatar-width));
+}
