@@ -15,9 +15,11 @@
     --badge-font-size: 1.5rem;
     --badge-font-color: rgb(66, 66, 66);
 
+    --status-label-width: 160px;
+    --status-value-width: 80px;
     --status-column: 1;
     --status-height: 50px;
-    --status-width: 250px;
+    --status-width: calc( var(--status-label-width) + var(--status-value-width) + 10px * 4 );
     --status-background: var(--background-color, rgb(245, 245, 245));
     --status-font-size: 2rem;
     --status-font-color: rgb(66, 66, 66);
@@ -126,11 +128,14 @@ body.transparent {
     display: flex;
     align-items: center;
     padding: 10px;
+    width: var(--status-label-width);
+    flex-shrink: 0;
 }
 
 /* 数値全体 */
 .MuiTypography-body2+.MuiTypography-body2 {
     font-size: var(--status-denom-font-size, var(--status-font-size));
+    width: var(--status-value-width);
 }
 
 /* 分子 */
