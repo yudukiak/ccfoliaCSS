@@ -36,7 +36,7 @@
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/board.css");
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/boardBackground.css");
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/boardForeground.css");
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/cardDeck.csss");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/cardDeck.css");
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/character.css");
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/chat.css");
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/cutIn.css");
