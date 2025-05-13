@@ -15,11 +15,13 @@
     --badge-font-size: 1.5rem;
     --badge-font-color: rgb(66, 66, 66);
 
-    --status-label-width: 160px;
-    --status-value-width: 80px;
+    /*
+    --status-label-width: auto;
+    --status-value-width: auto;
+    */
     --status-column: 1;
     --status-height: 50px;
-    --status-width: calc( var(--status-label-width) + var(--status-value-width) + 10px * 4 );
+    --status-width: calc( var(--status-label-width, 160px) + var(--status-value-width, 80px) + 10px * 4 );
     --status-background: var(--background-color, rgb(245, 245, 245));
     --status-font-size: 2rem;
     --status-font-color: rgb(66, 66, 66);
@@ -129,7 +131,7 @@ body.transparent {
     align-items: center;
     padding: 10px;
     width: var(--status-label-width);
-    flex-shrink: 0;
+    flex-shrink: 1;
 }
 
 /* 数値全体 */
@@ -140,6 +142,7 @@ body.transparent {
 
 /* 分子 */
 .MuiTypography-body2+.MuiTypography-body2>span {
+    margin-left: auto;
     font-size: var(--status-font-size);
 }
 
