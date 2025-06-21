@@ -52,6 +52,11 @@
   /* 非表示設定 'inline-flex' or 'none' */
   --skip-display: inline-flex;
   --close-display: inline-flex;
+  /* 非表示設定 'flex', 'block' or 'none' */
+  --title-display: flex;
+  --main-title-display: block;
+  --sub-title-display: block;
+  --message-display: block;
 }
 
 /* ココフォリア デフォルトの表示 */
@@ -73,6 +78,7 @@
 }
 
 .MuiToolbar-gutters {
+  display: var(--title-display);
   padding: 12px 24px;
 }
 
@@ -82,6 +88,7 @@
 }
 
 .MuiToolbar-root+div {
+  display: var(--message-display);
   padding: 0px 24px 16px;
   height: 160px;
 }
@@ -130,6 +137,7 @@ div[tabindex="0"]>.MuiPaper-root {
 
 /* 名前 */
 .MuiTypography-subtitle2 {
+  display: var(--main-title-display);
   font-size: var(--font-size-name);
   color: var(--font-color-name);
   text-shadow: var(--font-color-name-shadow);
@@ -137,6 +145,7 @@ div[tabindex="0"]>.MuiPaper-root {
 
 /* ダイス結果 */
 .MuiTypography-body2 {
+  display: var(--sub-title-display);
   font-size: var(--font-size-dice);
   color: var(--font-color-dice);
   text-shadow: var(--font-color-dice-shadow);
