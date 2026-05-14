@@ -1,3 +1,5 @@
-div[tabindex="0"][style^="right:"] > div:not([class], [id]) + div {
+[aria-label="盤面を拡大する"],
+[aria-label="盤面を拡大する"] + span,
+[aria-label="盤面を縮小する"] {
     display: none;
 }
