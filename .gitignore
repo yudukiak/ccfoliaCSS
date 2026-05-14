@@ -1,0 +1,4 @@
+/JavaScript/*.js
+
+# Snyk Security Extension
+.vscode/settings.json
