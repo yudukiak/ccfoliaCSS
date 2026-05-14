@@ -13,6 +13,7 @@
 | cardDeck.css        | 「カードデッキ」を消す                       |
 | character.css       | 盤面の「キャラクター」を消す                 |
 | chat.css            | 「ルームチャット」を消す                     |
+| ctrlDrag.css        | 「Ctrl + ドラッグ」を消す                     |
 | cutIn.css           | 「カットイン」を消す                         |
 | diceSymbol.css      | 「ダイスシンボル」を消す                     |
 | edit.css            | 鉛筆マークを消す                             |
@@ -39,6 +40,7 @@
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/cardDeck.css");
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/character.css");
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/chat.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/ctrlDrag.css");
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/cutIn.css");
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/diceSymbol.css");
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/edit.css");
@@ -56,8 +58,13 @@
 
 ## 更新メモ
 
-以下のCSSはclassName指定のためアップデート後に変わる可能性あり。
+以下のCSSは `className` 指定のためアップデート後に変わる可能性あり。
 
 - `cardDeck.css`
 - `markerPanel.css`
 - `screenPanel.css`
+
+以下のCSSは `aria-label` 指定のためアップデート後に変わる可能性あり。
+
+- `ctrlDrag.css`
+- `diceSymbol.css`
