@@ -30,7 +30,7 @@
 }
 
 /* タイマーの位置 */
-[tabindex='0'] {
+[tabindex='0']:not([aria-label]) {
   align-items: center;
   display: flex;
   justify-content: center;
